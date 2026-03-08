@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   <meta name="robots" content="index,follow,max-image-preview:large">
-  <link rel="canonical" href="http://example.com/widgets/profile-widget.html"/>
+  <link rel="canonical" href="http://example.com/2023/05/04/密码渗透笔记/密码学-rsa数学原理解析/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,20 +33,21 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>Hexo</title>
-  <meta name="keywords" content="null">
+  <title>密码学-RSA数学原理解析 - Hexo</title>
+  <meta name="keywords" content=", 学校作业,null">
   <meta desc name="description" content="Hexo - Feiyu Wu - Hexo">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/widgets/profile-widget.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="密码学-RSA数学原理解析">
+<meta property="og:url" content="http://example.com/2023/05/04/%E5%AF%86%E7%A0%81%E6%B8%97%E9%80%8F%E7%AC%94%E8%AE%B0/%E5%AF%86%E7%A0%81%E5%AD%A6-RSA%E6%95%B0%E5%AD%A6%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="FeiYu Wu 吴飞宇     具身智能&#x2F;可验证安全&#x2F;强化学习                         Email                        GitHub                        Google Scholar                        ORCID">
+<meta property="og:description" content="RSA数学原理解析1.引言RSA算法(RSA algorithm)是一种非对称加密算法, 广泛应用在互联网和电子商务中. 它使用一对密钥进行加密和解密, 分别称为公钥(public key)和私钥(private key). 使用公钥加密的内容只能用私钥解密, 使用私钥加密的内容只能用公钥解密, 并且不能通过公钥在可行的时间内计算出私钥. 这使得加密通信不需要交换私钥, 保证了通信的安全. 那么它">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2026-01-27T07:55:28.652Z">
-<meta property="article:modified_time" content="2026-01-27T07:55:28.652Z">
+<meta property="article:published_time" content="2023-05-04T12:09:16.000Z">
+<meta property="article:modified_time" content="2026-01-29T13:39:05.000Z">
 <meta property="article:author" content="Feiyu Wu">
+<meta property="article:tag" content="学校作业">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2296,7 +2297,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
   
-    <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Hexo","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Feiyu Wu","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Hexo"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Hexo","url":"http://example.com/","keywords":null,"description":"","author":{"@type":"Person","name":"Feiyu Wu","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":""},"publisher":{"@type":"Organization","name":"Hexo","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/widgets/profile-widget.html"},"author":{"@type":"Person","name":"Feiyu Wu","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"Hexo","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/widgets/profile-widget.html","wordCount":0,"datePublished":"2026-01-27T07:55:28.652Z","dateModified":"2026-01-27T07:55:28.652Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+    <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Hexo","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Feiyu Wu","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Hexo"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/05/04/密码渗透笔记/密码学-RSA数学原理解析/","name":"密码学-RSA数学原理解析"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Hexo","url":"http://example.com/","keywords":null,"description":"","author":{"@type":"Person","name":"Feiyu Wu","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":""},"publisher":{"@type":"Organization","name":"Hexo","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"密码学-RSA数学原理解析","description":"","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/05/04/%E5%AF%86%E7%A0%81%E6%B8%97%E9%80%8F%E7%AC%94%E8%AE%B0/%E5%AF%86%E7%A0%81%E5%AD%A6-RSA%E6%95%B0%E5%AD%A6%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90/"},"author":{"@type":"Person","name":"Feiyu Wu","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"Hexo","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/05/04/%E5%AF%86%E7%A0%81%E6%B8%97%E9%80%8F%E7%AC%94%E8%AE%B0/%E5%AF%86%E7%A0%81%E5%AD%A6-RSA%E6%95%B0%E5%AD%A6%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90/","wordCount":0,"datePublished":"2023-05-04T12:09:16.000Z","dateModified":"2026-01-29T13:39:05.000Z","keywords":"学校作业","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
   
   <!-- import head_end begin -->
   <!-- import head_end end -->
@@ -2579,7 +2580,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl.ejs -->
-      <div id="none" class='cover-wrapper page dock' style="display: none;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://gcore.jsdelivr.net/gh/MHG-LAB/cron@gh-pages/bing/bing.jpg"></div>
 
@@ -2654,13 +2655,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-page" id="page" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="http://example.com/widgets/profile-widget.html">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/04/密码渗透笔记/密码学-RSA数学原理解析/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Hexo">
   </span>
   <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="name" content="Hexo">
+    <meta itemprop="name" content="密码学-RSA数学原理解析">
     <meta itemprop="description" content="">
   </span>
   
@@ -2675,127 +2676,145 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
     
-      <span hidden itemprop="name headline">
+      <h1 class="title" itemprop="name headline">
+        密码学-RSA数学原理解析
+      </h1>
+      <div class='new-meta-box'>
         
-      </span>
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">请设置文章作者</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-05-04T20:09:16+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：May 4, 2023</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
     
   </div>
 
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <div class="custom-profile-widget">
-  <div class="profile-avatar-section">
-    <img src="/image/avatar.jpg" class="lazyload" data-srcset="/image/avatar.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="FeiYu Wu" class="profile-avatar lazyload" onclick="location.href='/'" style="cursor: pointer; width: 150px; height: 150px; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto; border: 3px solid #e0e0e0; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-  </div>
-  <div class="profile-info">
-    <div class="profile-name">FeiYu Wu 吴飞宇</div>
-    <div class="profile-subtitle">具身智能/可验证安全/强化学习</div>
-  </div>
-  <div class="profile-social">
-    <a href="mailto:you@example.com" class="social-link email-link">
-      <i class="fa-solid fa-envelope"></i>
-      <span>Email</span>
-    </a>
-    <a href="https://github.com/yourname" class="social-link github-link" target="_blank">
-      <i class="fab fa-github"></i>
-      <span>GitHub</span>
-    </a>
-    <a href="https://scholar.google.com" class="social-link scholar-link" target="_blank">
-      <i class="fa-solid fa-graduation-cap"></i>
-      <span>Google Scholar</span>
-    </a>
-    <a href="https://orcid.org/yourorcid" class="social-link orcid-link" target="_blank">
-      <i class="fa-brands fa-orcid"></i>
-      <span>ORCID</span>
-    </a>
-    <a href="/atom.xml" class="social-link rss-link">
-      <i class="fa-solid fa-rss"></i>
-      <span>RSS</span>
-    </a>
-  </div>
-</div>
+    <h1 id="RSA数学原理解析"><a href="#RSA数学原理解析" class="headerlink" title="RSA数学原理解析"></a>RSA数学原理解析</h1><h2 id="1-引言"><a href="#1-引言" class="headerlink" title="1.引言"></a>1.引言</h2><p><strong>RSA算法(RSA algorithm)<strong>是一种非对称加密算法, 广泛应用在互联网和电子商务中. 它使用一对密钥进行加密和解密, 分别称为</strong>公钥(public key)<strong>和</strong>私钥(private key)</strong>. 使用公钥加密的内容只能用私钥解密, 使用私钥加密的内容只能用公钥解密, 并且不能通过公钥在可行的时间内计算出私钥. 这使得加密通信不需要交换私钥, 保证了通信的安全. 那么它是怎么做到这一点的呢? 背后有哪些数学原理? 这篇文章我们来讨论这个问题.</p>
+<p>本文会先介绍RSA算法中用到的数论概念和定理: 模算术, 最大公约数与贝祖定理, 线性同余方程, 中国余数定理, 费马小定理; 然后再介绍RSA算法的原理, 并证明其是有效的. 本文会假设你了解数论的基本概念, 如素数, 最大公约数, 互素等</p>
+<h2 id="2-模算术"><a href="#2-模算术" class="headerlink" title="2.模算术"></a>2.模算术</h2><h3 id="2-1整数除法"><a href="#2-1整数除法" class="headerlink" title="2.1整数除法"></a>2.1整数除法</h3><p>用一个正整数去除一个整数，可以得到一个商和一个余数，数学符号定义为：</p>
+<p><strong>定理1</strong>：令 a 为整数, d 为正整数, 则存在唯一的整数 q 和 r, 满足 $0\leq r&lt;d$, 使得 $a&#x3D;dq+r$</p>
+<p>当r&#x3D;0时，我们称 d 整除 a, 记作$d|a$; 否则称 d 不整除 a, 记作 $d\nmid a$，整除有以下基本性质:</p>
+<p><strong>定理2</strong>：令a,b,c,为整数，其中$a\neq0$,则：如果$a|b$且$a|c$则$a|(a+b)$</p>
+<h3 id="2-2模算术"><a href="#2-2模算术" class="headerlink" title="2.2模算术"></a>2.2模算术</h3><p>在数论中我们特别关心一个整数被一个正整数除时的余数. 我们用 $a\bmod m&#x3D;b$ 表示整数 a 除以正整数 m 的余数是 b. 为了表示两个整数被一个正整数除时的余数相同, 人们又提出了<strong>同余式(congruence)</strong>.</p>
+<p><strong>定义1</strong>:如果 a 和 b 是整数而 m 是正整数, 则当 m 整除 a - b 时称 a 模 m 同余 b. 记作 $a\equiv b(\bmod m)$</p>
+<p>$a\equiv b(\bmod m)$ 和 $a\bmod m&#x3D;b$很相似. 事实上, 如果 $a\bmod m&#x3D;b$, 则 $a\equiv b(\bmod m)$. 但他们本质上是两个不同的概念.$a\bmod m&#x3D;b$ 表达的是一个函数, 而 $a\equiv b(\bmod m)$ 表达的是两个整数之间的关系.</p>
+<p><strong>另外</strong>，同余式$a\equiv b(\bmod m)$还可以表示为$m|(b-a)$，同时符合上式的式子可以转化为同余式</p>
+<p>模算术的性质：</p>
+<p><strong>定理3</strong>：如果m是正整数，a,b是整数，则有<br>$$<br>\begin{aligned}<br>(a+b)\bmod m &amp;&#x3D;((a\bmod m)+(b\bmod m))\bmod m\<br>ab\bmod m &amp;&#x3D;(a\bmod m)(b\bmod m)\bmod m<br>\end{aligned}<br>$$<br>根据定理3，可得一下推论</p>
+<p><strong>推论1</strong>：设m是正整数，a,b,c是整数；如果$a\equiv b(\bmod m)$则$ac\equiv bc(\bmod m)$</p>
+<p><strong>证明</strong>：</p>
+<p>$\because a\equiv b(\bmod m)$</p>
+<p>$\therefore m|(b-a)$ 所以右端再乘以任何整数m都可以整除</p>
+<p>即$m|(b-a)c$ 同理，既然$m|(b-a)$且$c|c$</p>
+<p>也可以推出$mc|(b-a)c$</p>
+<p>结论：若$a\equiv b(\bmod m)$，则$ac\equiv bc(\bmod m)$且$ac\equiv bc(\bmod mc)$同时成立</p>
+<p><strong>推论2</strong>设 m 是正整数, a, b 是整数, c 是不能被 m 整除的整数; 如果 $ac\equiv bc(\bmod m)$, 则$a\equiv b(\bmod m)$,依据推论1的证明，也是显而易见的。</p>
+<h2 id="3-最大公约数"><a href="#3-最大公约数" class="headerlink" title="3.最大公约数"></a>3.最大公约数</h2><p>如果一个整数 d 能够整除另一个整数 a, 则称 d 是 a 的一个<strong>约数(divisor)</strong>; 如果 d 既能整除 a 又能整除 b, 则称 d 是 a 和 b 的一个<strong>公约数(common divisor)</strong>. 能整除两个整数的最大整数称为这两个整数的<strong>最大公约数(greatest common divisor)</strong>.</p>
+<p><strong>定义2</strong>：令a和b是不全为0的两个整数，能使$d|a$和$d|b$的最大整数d成为a和b的<strong>最大公约数</strong>，记作$gcd(a,b)$</p>
+<h3 id="3-1-求最大公约数"><a href="#3-1-求最大公约数" class="headerlink" title="3.1 求最大公约数"></a>3.1 求最大公约数</h3><p>如何求两个已知整数的最大公约数呢? 这里我们讨论一个高效的求最大公约数的算法, 称为<strong>辗转相除法</strong>. 因为这个算法是欧几里得发明的, 所以也称为<strong>欧几里得算法</strong>. 辗转相除法基于以下定理:</p>
+<p><strong>引理 1</strong> 令 $a&#x3D;bq+r$, 其中 a, b, q 和 r 均为整数. 则有$gcd(a,b)&#x3D;gcd(b,r)$</p>
+<p><strong>证明</strong>：我们假设 d 是 a 和 b 的公约数, 即 $d|a$且 $d|b$, 那么根据定理2, d 也能整除 $a-bq&#x3D;r$. 所以 a 和 b 的任何公约数也是 b 和 r 的公约数;</p>
+<p>类似地, 假设 d 是 b 和 r 的公约数, 即 $d|b$且 $d|r$, 那么根据定理2, d 也能整除 $a&#x3D;bq+r$.. 所以 b 和 r 的任何公约数也是 a 和 b 的公约数;</p>
+<p>因此, a 与 b 和 b 与 r 拥有相同的公约数. 所以 $gcd(a,b)&#x3D;gcd(b,r)$</p>
+<p><strong>辗转相除法</strong>就是利用引理1, 把大数转换成小数. 例如, 求 $gcd(287,91)$, 我们就把用较大的数除以较小的数. 首先用 287 除以 91, 得<br>$$<br>287&#x3D;91\cdot3+14<br>$$<br>我们有$gcd(287,91)&#x3D;gcd(91,14)$,问题转化成求$gcd(91,14)$,同样的，用91除以14得<br>$$<br>91&#x3D;14\cdot6+7<br>$$<br>有$gcd(91,14)&#x3D;gcd(14,7)$,用14除以7得<br>$$<br>14&#x3D;7\cdot2+0<br>$$<br>所以$gcd(297,91)&#x3D;gcd(91,14)&#x3D;gcd(14,7)&#x3D;7$</p>
+<p>代码是这样的(两个都可以)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">def gcd(a,b):</span><br><span class="line">    while b!=0 :</span><br><span class="line">        r = a%b</span><br><span class="line">        a = b</span><br><span class="line">        b = r</span><br><span class="line">    return a</span><br><span class="line"></span><br><span class="line">def gcd_new(a,b):</span><br><span class="line">    if b==0: return a</span><br><span class="line">    return gcd_new(b,a%b)</span><br></pre></td></tr></table></figure>
 
-<style>
-.custom-profile-widget {
-  padding: 10px;
-}
-.profile-avatar-section {
-  text-align: center;
-  margin-bottom: 15px;
-}
-.profile-avatar {
-  width: 88px;
-  height: 88px;
-  border-radius: 50% !important;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
-}
-.profile-info {
-  text-align: center;
-  margin-bottom: 15px;
-}
-.profile-name {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-.profile-subtitle {
-  opacity: 0.8;
-  line-height: 1.4;
-}
-.profile-social {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-.social-link {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 4px 8px;
-  text-decoration: none;
-  border-radius: 6px;
-  transition: background-color 0.2s;
-}
-.social-link:hover {
-  background-color: rgba(0,0,0,0.05);
-}
-.social-link i {
-  width: 16px;
-  text-align: center;
-}
-.social-link span {
-  font-size: 14px;
-  color: #333; /* 文字统一黑色 */
-}
+<h3 id="3-2-贝祖定理"><a href="#3-2-贝祖定理" class="headerlink" title="3.2 贝祖定理"></a>3.2 贝祖定理</h3><p>现在我们讨论最大公约数的一个重要性质:</p>
+<p><strong>定理 4</strong> <strong>贝祖定理</strong> 如果整数 a, b 不全为零, 则 $gcd(a,b)$是 a 和 b 的线性组合集$ax+by|x,y\in Z$ 中最小的元素. 这里的 x 和 y 被称为<strong>贝祖系数</strong></p>
+<p><strong>证明</strong> 令 $A&#x3D;ax+by|x,y\in Z$ 设存在 $x_0$ ,$y_0$ 使 $d_0$ 是 A 中的最小正元素, $d_0&#x3D;ax_0+by_0$; 现在用 $d_0$去除 a, 这就得到唯一的整数 q(商) 和 r(余数) 满足<br>$$<br>\begin{aligned}<br>d_0q+r &amp;&#x3D; a \qquad 0\leq r&lt;d_0\<br>(ax_0+by_0)q+r&amp;&#x3D;a\<br>r&amp;&#x3D;a-aqx_0-bqy_0\<br>r&amp;&#x3D;a(1-qx_0)+b(-qy_0)\in A<br>\end{aligned}<br>$$<br>又$0\leq r &lt;d_0$,$d_0$是A中最小的正元素</p>
+<p>$\therefore r&#x3D;0,d|a$</p>
+<p>同理, 用 $d_0$去除 b, 可得 $d_0|b$. 所以说 $d_0$ 是 a 和 b 的公约数.</p>
+<p>设 a 和 b 的最大公约数是 d, 那么$d|(ax_0+by_0)$即 $d|d_0$</p>
+<p>$\therefore d_0$是a和b的最大公约数</p>
+<p>我们可以对辗转相除法稍作修改, 让它在计算出最大公约数的同时计算出贝祖系数.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">def gcd_new_2(a,b):</span><br><span class="line">    if b==0: return a,1,0</span><br><span class="line">    d,x,y = gcd_new_2(b,a%b)</span><br><span class="line">    return d,y,x-(int(a/b))*y</span><br></pre></td></tr></table></figure>
 
-/* 品牌色彩 - 各社交平台特色颜色 */
-.email-link i {
-  color: #1976d2; /* 邮箱蓝色 */
-}
-.github-link i {
-  color: #24292e; /* GitHub黑色 */
-}
-.scholar-link i {
-  color: #4285f4; /* Google学术蓝色 */
-}
-.orcid-link i {
-  color: #a6ce39; /* ORCID绿色 */
-}
-.rss-link i {
-  color: #ff6600; /* RSS橙色 */
-}
-
-/* 悬停时保持品牌色彩 */
-.social-link:hover i {
-  opacity: 0.8;
-}
-</style>
+<p>大家是否还记得辗转相除法：我们换一个步骤多一点的例子$gcd(963,657)$<br>$$<br>\begin{aligned}<br>963&amp;&#x3D;1\cdot657+306 \qquad\qquad&amp;9&amp;&#x3D;7\cdot657-15\cdot(963-657)&#x3D;22\cdot657-15\cdot963 \<br>657&amp;&#x3D;2\cdot306+45 &amp;9&amp;&#x3D;7\cdot(657-2\cdot306)-306&#x3D;7\cdot657-15\cdot963 \<br>306&amp;&#x3D;6\cdot45+36 &amp;9&amp;&#x3D;45-(306-6\cdot45)&#x3D;7\cdot45-306\<br>45 &amp;&#x3D;1\cdot36+9 &amp;9&amp;&#x3D;45-36\<br>36 &amp;&#x3D;4\cdot9<br>\end{aligned}<br>$$</p>
+<p>$gcd(963,657)&#x3D;9&#x3D;22\cdot657-15\cdot963,x_0&#x3D;-15,y_0&#x3D;22$就是二元一次方程$963x+657y&#x3D;9$的一组解且是$963x+657y$方程的正整数中的最小解。</p>
+<h2 id="4-线性同余方程"><a href="#4-线性同余方程" class="headerlink" title="4.线性同余方程"></a>4.线性同余方程</h2><p>现在我们来讨论求解形如 $ax\equiv b(\bmod m)$ 的线性同余方程. 求解这样的线性同余方程是数论研究及其应用中的一项基本任务. 如何求解这样的方程呢? 我们要介绍的一个方法是通过求使得方程 $\overline{a}a\equiv 1(\bmod m)$ 成立的整数 $\overline{a}$. 我们称 $\overline{a}$为 a 模 m 的逆. 下面的定理指出, 当 a 和 m 互素时, a 模 m 的逆必然存在.</p>
+<p><strong>定理5</strong>：如果 a 和 m 为互素的整数且 $m&gt;1$, 则 a 模 m 的逆存在, 并且是唯一的.</p>
+<p><strong>证明</strong> 由贝祖定理可知, $\because gcd(a,m)&#x3D;1$ , ∴ 存在整数 x 和 y 使得<br>$$<br>ax+my&#x3D;1<br>$$<br>这蕴含着<br>$$<br>ax+my\equiv 1(\bmod m)\<br>\because my\equiv0(\bmod m)，所以有\<br>ax\equiv 1(\bmod m)\<br>\therefore x为a模的逆<br>$$<br>这样我们就可以调用辗转相除法 <code>gcd(a, m)</code> 求得 a 模 m 的逆.</p>
+<p>求得了 a 模 m 的逆 �¯, 现在我们可以来解线性同余方程了. 具体的做法是这样的: 对于方程$ax\equiv b( \bmod m)$同时乘以$\overline{a}$得,<br>$$<br>\overline{a}ax\equiv \overline{a}b(\bmod m)<br>$$<br>$把\overline{a}a\equiv 1(\bmod m )代入上式，得\$<br>$$<br>x\equiv \overline{a}b(\bmod m)<br>$$</p>
+<p>$x\equiv \overline{a}b(\bmod m)$就是方程的解，注意同余方程会有无数个W整数解, 所以我们用同余式来表示同余方程的解.</p>
+<p><strong>例1</strong>:求$34x\equiv 77(\bmod 89)$</p>
+<p><strong>解</strong>调用$gcd(34,89)$,得$gcd(34,89)&#x3D;1&#x3D;13_89-34_34$,所以34模89的逆为-34，方程两边同时乘 -34 得<br>$$<br>\begin{aligned}<br>-34\cdot34x&amp;\equiv-34\cdot77(\bmod89)\<br>x&amp;\equiv-34\cdot77(\bmod89)\<br>x&amp;\equiv-2618\equiv52(\bmod89)<br>\end{aligned}<br>$$</p>
+<h2 id="5-中国剩余定理"><a href="#5-中国剩余定理" class="headerlink" title="5.中国剩余定理"></a>5.中国剩余定理</h2><p>中国南北朝时期数学著作 <em>孙子算经</em> 中提出了这样一个问题:</p>
+<p>有物不知其数，三三数之剩二，五五数之剩三，七七数之剩二。问物几何？</p>
+<p>用现代的数学语言表述就是: 下列同余方程组的解释多少?<br>$$<br>\begin{cases}<br>x\equiv2(\bmod3)\<br>x\equiv3(\bmod5)\<br>x\equiv2(\bmod7)\<br>\end{cases}<br>$$<br><em>孙子算经</em> 中首次提到了同余方程组问题及其具体解法. 因此中国剩余定理称为孙子定理.</p>
+<p><strong>定理 6</strong> <strong>中国余数定理</strong> 令 $m_1,m_2,…..,m_n$为大于 1 且两两互素的正整数, $a_1,a_2,….a_n$ 是任意整数. 则同余方程组<br>$$<br>\begin{cases}<br>x\equiv a_1(\bmod m_1)\<br>x\equiv a_2(\bmod m_2)\<br>…..\<br>x\equiv a_n(\bmod m_n)\<br>\end{cases}<br>$$<br>有唯一的模$m&#x3D;m_1m_2….m_n$的解</p>
+<p><strong>证明</strong>：我们使用构造证明法, 构造出这个方程组的解. 首先对于 $i&#x3D;1,2,….,n$, 令<br>$$<br>M_i&#x3D;\frac{m}{m_i}<br>$$</p>
+<p>即,$M_i$ 是除了$m_i$ 之外所有模数的积.$\because m_1,m_2….m_n$两两互素, $\therefore gcd(m_i,M_i)&#x3D;1$ 由定理5 可知, 存在整数 $y_i$ 是 $M_i$模$m_i$的逆. 即<br>$$<br>M_iy_i\equiv1(\bmod m_i)<br>$$<br>同时乘以$a_i$得<br>$$<br>a_iM_iy_i\equiv a_i(\bmod m_i)<br>$$<br>就是第 i 个方程的一个解; 那么怎么构造出方程组的解呢? 我们注意到, 根据 $M_i$ 的定义可得, 对所有的 $j\neq i$, 都有 $a_iM_iy_i\equiv0(\bmod m_j)$. 因此我们令<br>$$<br>x&#x3D;a_1M_1y_1+a_2M_2y_2+….+a_nM_ny_n&#x3D;\sum_{i&#x3D;1}^{n}{a_iM_iy_i}<br>$$<br>有了这个结论, 我们可以解答 <em>孙子算经</em> 中的问题了: 对方程组的每个方程, 求出 $M_i$ , 然后调用 <code>gcd(M_i, m_i)</code> 求出 $y_i$:<br>$$<br>\begin{cases}<br>\begin{aligned}<br>&amp;x\equiv2(\bmod3)\quad &amp;M_1&amp;&#x3D;35\quad y_1&#x3D;-1\<br>&amp;x\equiv3(\bmod5)\quad &amp;M_2&amp;&#x3D;21\quad y_2&#x3D;1\<br>&amp;x\equiv2(\bmod7)\quad &amp;M_3&amp;&#x3D;15\quad y_3&#x3D;-1\<br>\end{aligned}<br>\end{cases}<br>$$<br>最后求出$x&#x3D;-2_35+3_21+2*15&#x3D;23\equiv23(\bmod 105)$</p>
+<h2 id="6-费马小定理"><a href="#6-费马小定理" class="headerlink" title="6.费马小定理"></a>6.费马小定理</h2><p>现在我们来看数论中另外一个重要的定理, <strong>费马小定理(Fermat’s little theorem)</strong></p>
+<p><strong>定理7费马小定理</strong>：如果a是一个整数，p是一个素数，那么<br>$$<br>a^p\equiv a(\bmod p)<br>$$<br>特别的当a不是p的倍数时（即$gcd(a,p)&#x3D;1$），有<br>$$<br>a^{p-1}\equiv1(\bmod p)\<br>$$</p>
+<h2 id="7欧拉函数"><a href="#7欧拉函数" class="headerlink" title="7欧拉函数"></a>7欧拉函数</h2><p>再来看一看欧拉函数的知识。对于正整数n，<strong>欧拉函数</strong>$\varphi(n)$是小于或等于n的正整数中与n互质的数的数目</p>
+<p>如$\varphi(8)&#x3D;4$，1,3,5,7均与8互质</p>
+<p><strong>定理8</strong>：n,m为整数,$(n,m)&#x3D;1$，如果$a_1,a_2,….a_n$和$b_1,b_2,….b_n$分别是模n,m的一个完整系，则有形如$nb_i+ma_j(1\leq i\leq s,1\leq j\leq t)$的数构成模mn的一个完整缩系，特别地有$\varphi(nm)&#x3D;\varphi(n)\varphi(m)$</p>
+<p><strong>定理9</strong>：当n$\geq2$时，设$n&#x3D;p_1^{e_1}….p_s^{e_s}$是n的标准分解式，则<br>$$<br>\varphi(n)&#x3D;\prod_{l&#x3D;1}^{s}(p_l^{e_l}-p_l^{e_l-1})&#x3D;n\prod_{l&#x3D;1}^{s}(1-\frac{1}{p})<br>$$<br><strong>证明</strong>：当$(n.m)&#x3D;1$时<br>$$<br>\varphi(n,m)&#x3D;\varphi(n)\varphi(m)<br>$$<br>当$n_1,n_2……n_s$两两互素时<br>$$<br>\varphi(\prod_{l&#x3D;1}^{s}n_l)&#x3D;\prod_{l&#x3D;1}^{s}n_l<br>$$<br>因此<br>$$<br>\varphi(n)&#x3D;\prod_{l&#x3D;1}^{s}\varphi(p_l^{e_l})<br>$$<br>问题转化成如何求$\varphi(p_l^{e_l})$,其中$p_l$要么$p_l|a$,要么$(p_l,a)&#x3D;1$。在1,2….$p_l$当中可以被$p_l$整除的整数共有$\frac{p_l^{e_l}}{p_l}&#x3D;p_l^{e_l-1}$个，故其中与$p_l^{e_l}$互素的个数共有$p_l^{e_l}-p_l^{e_l-1}$个，于是<br>$$<br>\varphi(p_l^{e_l})&#x3D;p_l^{e_l}-p_l^{e_l-1}<br>$$<br>这样一来<br>$$<br>\varphi(n)&#x3D;\prod_{l&#x3D;1}^{s}(p_l^{e_l}-p_l^{e_l-1})&#x3D;\prod_{l&#x3D;1}^{s}p_l^{e_l}(1-\frac{1}{p_l})&#x3D;n\prod_{l&#x3D;1}^{s}(1-\frac{1}{p})<br>$$<br>其中若p为素数，则<br>$$<br>\varphi(p)&#x3D;p-1&#x3D;p(1-\frac{1}{p})<br>$$</p>
+<h2 id="8-RSA算法"><a href="#8-RSA算法" class="headerlink" title="8.RSA算法"></a>8.RSA算法</h2><p>我们终于可以来看 RSA 算法了. 先来看 RSA 算法是怎么运作的:</p>
+<p>RSA 算法按照以下过程创建公钥和私钥:</p>
+<ul>
+<li>1.随机算取两个大素数p和q，$p\neq q$</li>
+<li>2.计算$n&#x3D;pq$</li>
+<li>3.选取一个与$(p-1)(q-1)$互素的小整数e</li>
+<li>4.求e模$(p-1)(q-1)$的逆，记作d，即$de\equiv 1\bmod(p-1)(q-1)$</li>
+<li>5.将$P&#x3D;(e,n)$公开，是公钥。</li>
+<li>6.将$S&#x3D;(d,n)$保密，作为私钥 想</li>
+</ul>
+<p>要把明文$M $加密成密文$C$,计算<br>$$<br>C&#x3D;M^e\bmod n<br>$$<br>要把密文解密成明文$C$$M $,计算<br>$$<br>M&#x3D;C^d \bmod n<br>$$</p>
+<p>下面证明RSA算法是有效的：</p>
+<p><strong>证明</strong>：要证明其有效性，只需要证明$C\equiv M^e\bmod n$也就是$M^{ed}\equiv M(\bmod n)$,注意到d为e模$(p-1)(1-1)$的逆，所以有<br>$$<br>ed\equiv 1(\bmod(p-1)(q-1))<br>$$</p>
 
   </div>
   
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
+      
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
+      
+    </div>
   
   
     
@@ -2805,10 +2824,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2026-01-27T15:55:28+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2026-01-29T21:39:05+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Jan 27, 2026</p>
+    <p>更新于：Jan 29, 2026</p>
   </a>
 </div>
 
@@ -2816,6 +2835,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         
           
+  
+  
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E5%AD%A6%E6%A0%A1%E4%BD%9C%E4%B8%9A/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>学校作业</p></a></div>
+  <span hidden itemprop="keywords">学校作业</span>
+  
+
 
         
       
@@ -2827,7 +2853,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/widgets/profile-widget.html&title= - Hexo&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2023/05/04/%E5%AF%86%E7%A0%81%E6%B8%97%E9%80%8F%E7%AC%94%E8%AE%B0/%E5%AF%86%E7%A0%81%E5%AD%A6-RSA%E6%95%B0%E5%AD%A6%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90/&title=密码学-RSA数学原理解析 - Hexo&summary="
           
           >
           
@@ -2839,7 +2865,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/widgets/profile-widget.html&title= - Hexo&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2023/05/04/%E5%AF%86%E7%A0%81%E6%B8%97%E9%80%8F%E7%AC%94%E8%AE%B0/%E5%AF%86%E7%A0%81%E5%AD%A6-RSA%E6%95%B0%E5%AD%A6%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90/&title=密码学-RSA数学原理解析 - Hexo&summary="
           
           >
           
@@ -2851,7 +2877,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/widgets/profile-widget.html&title= - Hexo&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2023/05/04/%E5%AF%86%E7%A0%81%E6%B8%97%E9%80%8F%E7%AC%94%E8%AE%B0/%E5%AF%86%E7%A0%81%E5%AD%A6-RSA%E6%95%B0%E5%AD%A6%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90/&title=密码学-RSA数学原理解析 - Hexo&summary="
           
           >
           
@@ -2882,6 +2908,22 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
 
   
+    <div class="prev-next">
+      
+        <a class='prev' href='/2023/05/04/%E5%AF%86%E7%A0%81%E6%B8%97%E9%80%8F%E7%AC%94%E8%AE%B0/DNS%E9%9A%A7%E9%81%93-FRP%E9%9A%A7%E9%81%93/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>DNS隧道-FRP隧道</p>
+          <p class='content'>DNS隧道+FRP隧道搭建一、DNS隧道准备1.DNS隧道介绍DNS隧道，是隧道技术的一种。当我们HTTP、HTTPS这样的上层协议、正反向端口转发都失败的时候，可以尝试DNS隧道。DNS隧道很...</p>
+        </a>
+      
+      
+        <a class='next' href='/2023/05/04/%E5%AF%86%E7%A0%81%E6%B8%97%E9%80%8F%E7%AC%94%E8%AE%B0/%E5%AF%86%E7%A0%81%E5%AD%A6-unusualrsa1/'>
+          <p class='title'>密码学-unusualrsa1<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>ctfshow-unusualrsa11 题解下载的代码如下
+12345678910111213141516171819202122# *********************# @Autho...</p>
+        </a>
+      
+    </div>
+  
   <!-- 文章推荐 -->
   
   
@@ -2896,7 +2938,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/widgets/profile-widget.html#comments">
+      <meta itemprop="discussionUrl" content="/2023/05/04/%E5%AF%86%E7%A0%81%E6%B8%97%E9%80%8F%E7%AC%94%E8%AE%B0/%E5%AF%86%E7%A0%81%E5%AD%A6-RSA%E6%95%B0%E5%AD%A6%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90/index.html#comments">
     </span>
     <p ct><i class='fas fa-comments'></i> 评论</p>
     
@@ -3056,9 +3098,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
 
 
-  <div class="">
-    <!-- pjax占位 -->
-  </div>
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%BC%95%E8%A8%80"><span class="toc-text">1.引言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E6%A8%A1%E7%AE%97%E6%9C%AF"><span class="toc-text">2.模算术</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1%E6%95%B4%E6%95%B0%E9%99%A4%E6%B3%95"><span class="toc-text">2.1整数除法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2%E6%A8%A1%E7%AE%97%E6%9C%AF"><span class="toc-text">2.2模算术</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E6%9C%80%E5%A4%A7%E5%85%AC%E7%BA%A6%E6%95%B0"><span class="toc-text">3.最大公约数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-%E6%B1%82%E6%9C%80%E5%A4%A7%E5%85%AC%E7%BA%A6%E6%95%B0"><span class="toc-text">3.1 求最大公约数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-%E8%B4%9D%E7%A5%96%E5%AE%9A%E7%90%86"><span class="toc-text">3.2 贝祖定理</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E7%BA%BF%E6%80%A7%E5%90%8C%E4%BD%99%E6%96%B9%E7%A8%8B"><span class="toc-text">4.线性同余方程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E4%B8%AD%E5%9B%BD%E5%89%A9%E4%BD%99%E5%AE%9A%E7%90%86"><span class="toc-text">5.中国剩余定理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E8%B4%B9%E9%A9%AC%E5%B0%8F%E5%AE%9A%E7%90%86"><span class="toc-text">6.费马小定理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7%E6%AC%A7%E6%8B%89%E5%87%BD%E6%95%B0"><span class="toc-text">7欧拉函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-RSA%E7%AE%97%E6%B3%95"><span class="toc-text">8.RSA算法</span></a></li></ol>
+    </div>
+  </section>
 
   
 
@@ -3112,7 +3164,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};

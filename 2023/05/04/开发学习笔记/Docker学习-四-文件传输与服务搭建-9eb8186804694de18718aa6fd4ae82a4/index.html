@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   <meta name="robots" content="index,follow,max-image-preview:large">
-  <link rel="canonical" href="http://example.com/widgets/profile-widget.html"/>
+  <link rel="canonical" href="http://example.com/2023/05/04/开发学习笔记/docker学习-四-文件传输与服务搭建-9eb8186804694de18718aa6fd4ae82a4/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,20 +33,21 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>Hexo</title>
-  <meta name="keywords" content="null">
+  <title>Docker学习-四-文件传输与服务搭建-9eb8186804694de18718aa6fd4ae82a4 - Hexo</title>
+  <meta name="keywords" content=", 学校作业,null">
   <meta desc name="description" content="Hexo - Feiyu Wu - Hexo">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/widgets/profile-widget.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Docker学习-四-文件传输与服务搭建-9eb8186804694de18718aa6fd4ae82a4">
+<meta property="og:url" content="http://example.com/2023/05/04/%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Docker%E5%AD%A6%E4%B9%A0-%E5%9B%9B-%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E4%B8%8E%E6%9C%8D%E5%8A%A1%E6%90%AD%E5%BB%BA-9eb8186804694de18718aa6fd4ae82a4/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="FeiYu Wu 吴飞宇     具身智能&#x2F;可验证安全&#x2F;强化学习                         Email                        GitHub                        Google Scholar                        ORCID">
+<meta property="og:description" content="Docker学习(四):文件传输与服务搭建一、文件传输1.先拿到容器ID全称拿到短ID  1docker inspect -f &#x27;&#123;&#123;.Id&#125;&#125;&#x27; d162c8a4d084   2.传输文件1docker cp 本地文件路径 ID全称:容器路径  1docker cp .\\Desktop\\HelloWorld.txt d162c8a4">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2026-01-27T07:55:28.652Z">
-<meta property="article:modified_time" content="2026-01-27T07:55:28.652Z">
+<meta property="article:published_time" content="2023-05-04T12:09:16.000Z">
+<meta property="article:modified_time" content="2026-01-29T13:12:02.000Z">
 <meta property="article:author" content="Feiyu Wu">
+<meta property="article:tag" content="学校作业">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2296,7 +2297,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
   
-    <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Hexo","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Feiyu Wu","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Hexo"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Hexo","url":"http://example.com/","keywords":null,"description":"","author":{"@type":"Person","name":"Feiyu Wu","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":""},"publisher":{"@type":"Organization","name":"Hexo","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/widgets/profile-widget.html"},"author":{"@type":"Person","name":"Feiyu Wu","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"Hexo","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/widgets/profile-widget.html","wordCount":0,"datePublished":"2026-01-27T07:55:28.652Z","dateModified":"2026-01-27T07:55:28.652Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+    <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Hexo","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Feiyu Wu","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Hexo"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/05/04/开发学习笔记/Docker学习-四-文件传输与服务搭建-9eb8186804694de18718aa6fd4ae82a4/","name":"Docker学习-四-文件传输与服务搭建-9eb8186804694de18718aa6fd4ae82a4"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Hexo","url":"http://example.com/","keywords":null,"description":"","author":{"@type":"Person","name":"Feiyu Wu","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":""},"publisher":{"@type":"Organization","name":"Hexo","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Docker学习-四-文件传输与服务搭建-9eb8186804694de18718aa6fd4ae82a4","description":"","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/05/04/%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Docker%E5%AD%A6%E4%B9%A0-%E5%9B%9B-%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E4%B8%8E%E6%9C%8D%E5%8A%A1%E6%90%AD%E5%BB%BA-9eb8186804694de18718aa6fd4ae82a4/"},"author":{"@type":"Person","name":"Feiyu Wu","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"Hexo","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/05/04/%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Docker%E5%AD%A6%E4%B9%A0-%E5%9B%9B-%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E4%B8%8E%E6%9C%8D%E5%8A%A1%E6%90%AD%E5%BB%BA-9eb8186804694de18718aa6fd4ae82a4/","wordCount":0,"datePublished":"2023-05-04T12:09:16.000Z","dateModified":"2026-01-29T13:12:02.000Z","keywords":"学校作业","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
   
   <!-- import head_end begin -->
   <!-- import head_end end -->
@@ -2579,7 +2580,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl.ejs -->
-      <div id="none" class='cover-wrapper page dock' style="display: none;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://gcore.jsdelivr.net/gh/MHG-LAB/cron@gh-pages/bing/bing.jpg"></div>
 
@@ -2654,13 +2655,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-page" id="page" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="http://example.com/widgets/profile-widget.html">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/04/开发学习笔记/Docker学习-四-文件传输与服务搭建-9eb8186804694de18718aa6fd4ae82a4/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Hexo">
   </span>
   <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="name" content="Hexo">
+    <meta itemprop="name" content="Docker学习-四-文件传输与服务搭建-9eb8186804694de18718aa6fd4ae82a4">
     <meta itemprop="description" content="">
   </span>
   
@@ -2675,127 +2676,142 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
     
-      <span hidden itemprop="name headline">
+      <h1 class="title" itemprop="name headline">
+        Docker学习-四-文件传输与服务搭建-9eb8186804694de18718aa6fd4ae82a4
+      </h1>
+      <div class='new-meta-box'>
         
-      </span>
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">请设置文章作者</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-05-04T20:09:16+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：May 4, 2023</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
     
   </div>
 
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <div class="custom-profile-widget">
-  <div class="profile-avatar-section">
-    <img src="/image/avatar.jpg" class="lazyload" data-srcset="/image/avatar.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="FeiYu Wu" class="profile-avatar lazyload" onclick="location.href='/'" style="cursor: pointer; width: 150px; height: 150px; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto; border: 3px solid #e0e0e0; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-  </div>
-  <div class="profile-info">
-    <div class="profile-name">FeiYu Wu 吴飞宇</div>
-    <div class="profile-subtitle">具身智能/可验证安全/强化学习</div>
-  </div>
-  <div class="profile-social">
-    <a href="mailto:you@example.com" class="social-link email-link">
-      <i class="fa-solid fa-envelope"></i>
-      <span>Email</span>
-    </a>
-    <a href="https://github.com/yourname" class="social-link github-link" target="_blank">
-      <i class="fab fa-github"></i>
-      <span>GitHub</span>
-    </a>
-    <a href="https://scholar.google.com" class="social-link scholar-link" target="_blank">
-      <i class="fa-solid fa-graduation-cap"></i>
-      <span>Google Scholar</span>
-    </a>
-    <a href="https://orcid.org/yourorcid" class="social-link orcid-link" target="_blank">
-      <i class="fa-brands fa-orcid"></i>
-      <span>ORCID</span>
-    </a>
-    <a href="/atom.xml" class="social-link rss-link">
-      <i class="fa-solid fa-rss"></i>
-      <span>RSS</span>
-    </a>
-  </div>
-</div>
+    <h1 id="Docker学习-四-文件传输与服务搭建"><a href="#Docker学习-四-文件传输与服务搭建" class="headerlink" title="Docker学习(四):文件传输与服务搭建"></a>Docker学习(四):文件传输与服务搭建</h1><h1 id="一、文件传输"><a href="#一、文件传输" class="headerlink" title="一、文件传输"></a>一、文件传输</h1><h2 id="1-先拿到容器ID全称"><a href="#1-先拿到容器ID全称" class="headerlink" title="1.先拿到容器ID全称"></a>1.先拿到容器ID全称</h2><p>拿到短ID</p>
+<p><img src="https://my-bloag-image-xiaowu.oss-cn-beijing.aliyuncs.com/image/202403022211510.png" class="lazyload" data-srcset="https://my-bloag-image-xiaowu.oss-cn-beijing.aliyuncs.com/image/202403022211510.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Untitled"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker inspect -f &#x27;&#123;&#123;.Id&#125;&#125;&#x27; d162c8a4d084</span><br></pre></td></tr></table></figure>
 
-<style>
-.custom-profile-widget {
-  padding: 10px;
-}
-.profile-avatar-section {
-  text-align: center;
-  margin-bottom: 15px;
-}
-.profile-avatar {
-  width: 88px;
-  height: 88px;
-  border-radius: 50% !important;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
-}
-.profile-info {
-  text-align: center;
-  margin-bottom: 15px;
-}
-.profile-name {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-.profile-subtitle {
-  opacity: 0.8;
-  line-height: 1.4;
-}
-.profile-social {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-.social-link {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 4px 8px;
-  text-decoration: none;
-  border-radius: 6px;
-  transition: background-color 0.2s;
-}
-.social-link:hover {
-  background-color: rgba(0,0,0,0.05);
-}
-.social-link i {
-  width: 16px;
-  text-align: center;
-}
-.social-link span {
-  font-size: 14px;
-  color: #333; /* 文字统一黑色 */
-}
+<p><img src="https://my-bloag-image-xiaowu.oss-cn-beijing.aliyuncs.com/image/202403022211939.png" class="lazyload" data-srcset="https://my-bloag-image-xiaowu.oss-cn-beijing.aliyuncs.com/image/202403022211939.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Untitled"></p>
+<h2 id="2-传输文件"><a href="#2-传输文件" class="headerlink" title="2.传输文件"></a>2.传输文件</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker cp 本地文件路径 ID全称:容器路径</span><br></pre></td></tr></table></figure>
 
-/* 品牌色彩 - 各社交平台特色颜色 */
-.email-link i {
-  color: #1976d2; /* 邮箱蓝色 */
-}
-.github-link i {
-  color: #24292e; /* GitHub黑色 */
-}
-.scholar-link i {
-  color: #4285f4; /* Google学术蓝色 */
-}
-.orcid-link i {
-  color: #a6ce39; /* ORCID绿色 */
-}
-.rss-link i {
-  color: #ff6600; /* RSS橙色 */
-}
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker cp .\\Desktop\\HelloWorld.txt d162c8a4d08424c31fff1ca59462b9e29417341b032010fdfd3c97c9208bcdc2:/root/HelloWorld.txt</span><br></pre></td></tr></table></figure>
 
-/* 悬停时保持品牌色彩 */
-.social-link:hover i {
-  opacity: 0.8;
-}
-</style>
+<p><img src="https://my-bloag-image-xiaowu.oss-cn-beijing.aliyuncs.com/image/202403022211201.png" class="lazyload" data-srcset="https://my-bloag-image-xiaowu.oss-cn-beijing.aliyuncs.com/image/202403022211201.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Untitled"></p>
+<p>进入到容器中可以看到我们的文件被传输到里面去了</p>
+<p><img src="https://my-bloag-image-xiaowu.oss-cn-beijing.aliyuncs.com/image/202403022211671.png" class="lazyload" data-srcset="https://my-bloag-image-xiaowu.oss-cn-beijing.aliyuncs.com/image/202403022211671.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Untitled"></p>
+<p>如果是容器传输文件到本地的话，反过来就好了：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker cp ID全称:容器文件路径 本地路径</span><br></pre></td></tr></table></figure>
 
+<h2 id="二、服务搭建"><a href="#二、服务搭建" class="headerlink" title="二、服务搭建"></a>二、服务搭建</h2><p>编写<strong>Systemd Service</strong>开启服务</p>
+<p>教程来自：<a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000014740871">https://segmentfault.com/a/1190000014740871</a></p>
+<h2 id="1-什么是Systemd-Service"><a href="#1-什么是Systemd-Service" class="headerlink" title="1. 什么是Systemd Service"></a>1. 什么是Systemd Service</h2><ul>
+<li>Systemd 服务是一种以 .service 结尾的单元（unit）配置文件，用于控制由Systemd 控制或监视的进程。简单说，用于后台以守护精灵（daemon）的形式运行程序。</li>
+<li>Systemd 广泛应用于新版本的RHEL、SUSE Linux Enterprise、CentOS、Fedora和openSUSE中，用于替代旧有的服务管理器<code>service</code>。</li>
+<li>基本命令：</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">systemctl command xxx.service</span><br><span class="line"># 其中command可以是start、stop、restart、enable等，比如：</span><br><span class="line">systemctl start httpd.service #启动Apache服务</span><br><span class="line">systemctl stop httpd.service #停止Apache服务</span><br><span class="line">systemctl restart httpd.service #停止Apache服务</span><br><span class="line">systemctl enable mariadb.service #将MariaDB服务设为开机启动</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Systemd Service 位于 <code>/etc/systemd/system</code>（供系统管理员和用户使用），<code>/usr/lib/systemd/system</code>（供发行版打包者使用），我们一般使用前者即可。</li>
+</ul>
+<h2 id="2-编写Systemd-Service"><a href="#2-编写Systemd-Service" class="headerlink" title="2.编写Systemd Service"></a>2.编写Systemd Service</h2><ul>
+<li>Systemd 服务的内容主要分为三个部分，控制单元（unit）的定义、服务（service）的定义、以及安装部分。</li>
+</ul>
+<h3 id="a-定义控制单元-Unit"><a href="#a-定义控制单元-Unit" class="headerlink" title="a 定义控制单元 [Unit]"></a>a 定义控制单元 [Unit]</h3><ul>
+<li>在 Systemd 中，所有引导过程中 Systemd 要控制的东西都是一个单元。基本的用法如下：</li>
+<li>Description：代表整个单元的描述，可根据需要任意填写。</li>
+<li>Wants：本单元启动了，它“想要”的单元也会被启动。但是这个单元若启动不成功，对本单元没有影响。</li>
+<li>Requires: 这个单元启动了，那么它“需要”的单元也会被启动; 它“需要”的单元被停止了，它自己也活不了。但是请注意，这个设定并不能控制启动顺序，因为它“需要”的单元启动也需要时间，若它“需要”的单元启动还未完成，就开始启动本单元，则本单元也无法启动，所以不建议使用这个字段。</li>
+<li>OnFailure：若本单元启动失败了，那么启动这个单元作为折衷。</li>
+<li>Before&#x2F;After：指定启动顺序。</li>
+<li>看一个实际的例子：</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description=Protect ARP list</span><br><span class="line">Wants=network-online.target</span><br><span class="line">After=network.target</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>其中network.target代表有网路，network-online.target代表一个连通着的网络。</li>
+</ul>
+<h3 id="b-定义服务本体-service"><a href="#b-定义服务本体-service" class="headerlink" title="b 定义服务本体 [service]"></a>b 定义服务本体 [service]</h3><ul>
+<li>在定义完了 Systemd 用来识别服务的单元后，我们来定义服务本体。基本的用法如下：</li>
+<li>Type：服务的类型，各种类型的区别如下所示<ul>
+<li>simple：默认，这是最简单的服务类型。意思就是说启动的程序就是主体程序，这个程序要是退出那么一切皆休。</li>
+<li>forking：标准 Unix Daemon 使用的启动方式。启动程序后会调用 fork() 函数，把必要的通信频道都设置好之后父进程退出，留下守护精灵的子进程。</li>
+<li>oneshot：适用于那些被一次性执行的任务或者命令，它运行完成后便了无痕迹。因为这类服务运行完就没有任何痕迹，我们经常会需要使用 RemainAfterExit&#x3D;yes。意思是说，即使没有进程存在，Systemd 也认为该服务启动成功了。同时只有这种类型支持多条命令，命令之间用<code>;</code>分割，如需换行可以用<code>\</code>。</li>
+<li>dbus：这个程序启动时需要获取一块 DBus 空间，所以需要和 BusName&#x3D; 一起用。只有它成功获得了 DBus 空间，依赖它的程序才会被启动。</li>
+</ul>
+</li>
+<li>ExecStart：在输入的命令是start时候执行的命令，这里的命令启动的程序必须使用绝对路径，比如你必须用<code>/sbin/arp</code>而不能简单的以环境变量直接使用<code>arp</code>。</li>
+<li>ExecStop：在输入的命令是stop时候执行的命令，要求同上。</li>
+<li>ExecReload：这个不是必需，如果不写则你的service就不支持restart命令。ExecStart和ExecStop是必须要有的。</li>
+<li>看一个实际的例子：</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[Service]</span><br><span class="line">Type=oneshot</span><br><span class="line">RemainAfterExit=yes</span><br><span class="line">ExecStart=/sbin/arp -f /etc/ip-mac</span><br><span class="line">ExecReload=/sbin/arp -f /etc/ip-mac</span><br><span class="line">ExecStop=/sbin/arp -d -a</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>这里在start和restart的时候会读取并添加<code>/etc/ip-mac</code>文件中的ARP条目到ARP表中，而stop时清空ARP表。</li>
+</ul>
+<h3 id="c-安装服务-install"><a href="#c-安装服务-install" class="headerlink" title="c. 安装服务 [install]"></a>c. 安装服务 [install]</h3><ul>
+<li>服务编写完之后还需要被systemd装载，定义安装单元各个字段如下：</li>
+<li>WantedBy：设置服务被谁装载，一般设置为<code>multi-user.target</code></li>
+<li>Alias：为service设置一个别名，可以使用多个名字来操作服务。</li>
+<li>Also：在安装这个服务时候还需要的其他服务</li>
+</ul>
+<h3 id="d-完整的-Systemd-Service-配置实例"><a href="#d-完整的-Systemd-Service-配置实例" class="headerlink" title="d.完整的 Systemd Service 配置实例"></a>d.完整的 Systemd Service 配置实例</h3><ul>
+<li>组合上面的三个模块，我们可以得到一个完整的 Systemd Service 配置实例：</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description=Protect ARP list</span><br><span class="line">Wants=network-online.target</span><br><span class="line">After=network.target</span><br><span class="line">[Service]</span><br><span class="line">Type=oneshot</span><br><span class="line">RemainAfterExit=yes</span><br><span class="line">ExecStart=/sbin/arp -f /etc/ip-mac</span><br><span class="line">ExecReload=/sbin/arp -f /etc/ip-mac</span><br><span class="line">ExecStop=/sbin/arp -d -a</span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure>
   </div>
   
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
+      
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
+      
+    </div>
   
   
     
@@ -2805,10 +2821,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2026-01-27T15:55:28+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2026-01-29T21:12:02+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Jan 27, 2026</p>
+    <p>更新于：Jan 29, 2026</p>
   </a>
 </div>
 
@@ -2816,6 +2832,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         
           
+  
+  
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E5%AD%A6%E6%A0%A1%E4%BD%9C%E4%B8%9A/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>学校作业</p></a></div>
+  <span hidden itemprop="keywords">学校作业</span>
+  
+
 
         
       
@@ -2827,7 +2850,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/widgets/profile-widget.html&title= - Hexo&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2023/05/04/%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Docker%E5%AD%A6%E4%B9%A0-%E5%9B%9B-%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E4%B8%8E%E6%9C%8D%E5%8A%A1%E6%90%AD%E5%BB%BA-9eb8186804694de18718aa6fd4ae82a4/&title=Docker学习-四-文件传输与服务搭建-9eb8186804694de18718aa6fd4ae82a4 - Hexo&summary="
           
           >
           
@@ -2839,7 +2862,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/widgets/profile-widget.html&title= - Hexo&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2023/05/04/%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Docker%E5%AD%A6%E4%B9%A0-%E5%9B%9B-%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E4%B8%8E%E6%9C%8D%E5%8A%A1%E6%90%AD%E5%BB%BA-9eb8186804694de18718aa6fd4ae82a4/&title=Docker学习-四-文件传输与服务搭建-9eb8186804694de18718aa6fd4ae82a4 - Hexo&summary="
           
           >
           
@@ -2851,7 +2874,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/widgets/profile-widget.html&title= - Hexo&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2023/05/04/%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Docker%E5%AD%A6%E4%B9%A0-%E5%9B%9B-%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E4%B8%8E%E6%9C%8D%E5%8A%A1%E6%90%AD%E5%BB%BA-9eb8186804694de18718aa6fd4ae82a4/&title=Docker学习-四-文件传输与服务搭建-9eb8186804694de18718aa6fd4ae82a4 - Hexo&summary="
           
           >
           
@@ -2882,6 +2905,25 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
 
   
+    <div class="prev-next">
+      
+        <a class='prev' href='/2023/05/04/%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/KAM-Android%E5%BC%80%E5%8F%91-Android-%E5%BC%80%E5%8F%91-%E4%BA%8C-%E6%9E%B6%E6%9E%84%E8%AF%A6%E8%A7%A3/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>KAM-Android开发-Android-开发-二-架构详解</p>
+          <p class='content'>Android 开发(二) 架构详解教程来自我们的老朋友菜鸟
+https://www.runoob.com/android/android-architecture.html
+还有
+https:...</p>
+        </a>
+      
+      
+        <a class='next' href='/2023/05/04/%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Node-js%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89/'>
+          <p class='title'>Node.js学习（一）<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>Node.js学习（一）1.Node.js的异步在了解Node.js异步之前，我们先看一看其前身JavaScript的异步编程技巧。
+一个异步过程的执行将不再与原有的序列有顺序关系。简单来理解就...</p>
+        </a>
+      
+    </div>
+  
   <!-- 文章推荐 -->
   
   
@@ -2896,7 +2938,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/widgets/profile-widget.html#comments">
+      <meta itemprop="discussionUrl" content="/2023/05/04/%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Docker%E5%AD%A6%E4%B9%A0-%E5%9B%9B-%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E4%B8%8E%E6%9C%8D%E5%8A%A1%E6%90%AD%E5%BB%BA-9eb8186804694de18718aa6fd4ae82a4/index.html#comments">
     </span>
     <p ct><i class='fas fa-comments'></i> 评论</p>
     
@@ -3056,9 +3098,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
 
 
-  <div class="">
-    <!-- pjax占位 -->
-  </div>
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%85%88%E6%8B%BF%E5%88%B0%E5%AE%B9%E5%99%A8ID%E5%85%A8%E7%A7%B0"><span class="toc-text">1.先拿到容器ID全称</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E4%BC%A0%E8%BE%93%E6%96%87%E4%BB%B6"><span class="toc-text">2.传输文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E6%9C%8D%E5%8A%A1%E6%90%AD%E5%BB%BA"><span class="toc-text">二、服务搭建</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E4%BB%80%E4%B9%88%E6%98%AFSystemd-Service"><span class="toc-text">1. 什么是Systemd Service</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E7%BC%96%E5%86%99Systemd-Service"><span class="toc-text">2.编写Systemd Service</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#a-%E5%AE%9A%E4%B9%89%E6%8E%A7%E5%88%B6%E5%8D%95%E5%85%83-Unit"><span class="toc-text">a 定义控制单元 [Unit]</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#b-%E5%AE%9A%E4%B9%89%E6%9C%8D%E5%8A%A1%E6%9C%AC%E4%BD%93-service"><span class="toc-text">b 定义服务本体 [service]</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#c-%E5%AE%89%E8%A3%85%E6%9C%8D%E5%8A%A1-install"><span class="toc-text">c. 安装服务 [install]</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#d-%E5%AE%8C%E6%95%B4%E7%9A%84-Systemd-Service-%E9%85%8D%E7%BD%AE%E5%AE%9E%E4%BE%8B"><span class="toc-text">d.完整的 Systemd Service 配置实例</span></a></li></ol></li></ol>
+    </div>
+  </section>
 
   
 
@@ -3112,7 +3164,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
