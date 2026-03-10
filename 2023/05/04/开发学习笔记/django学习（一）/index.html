@@ -2250,7 +2250,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1772973689139),
+    lastupdate: new Date(1773135953931),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -3023,14 +3023,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2023/05/04/%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/VUE%E5%AD%A6%E4%B9%A0-%E4%B8%89/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>VUE学习-三</p>
-          <p class='content'>1 Class 与 Style 绑定数据绑定的一个常见需求场景是操纵元素的 CSS class 列表和内联样式。因为 class 和 style 都是 attribute，我们可以和其他 att...</p>
-        </a>
-      
-      
-        <a class='next' href='/2023/05/04/%E6%97%A5%E5%B8%B8%E5%B7%A5%E5%85%B7/Chatgpt-api%E5%85%85%E5%80%BC-%E5%8D%87%E7%BA%A7plus-%E6%95%99%E7%A8%8B-%E8%99%9A%E6%8B%9F%E4%BF%A1%E7%94%A8%E5%8D%A1/'>
-          <p class='title'>Chatgpt-api充值-升级plus-教程-虚拟信用卡<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+        <a class='prev' href='/2023/05/04/%E6%97%A5%E5%B8%B8%E5%B7%A5%E5%85%B7/Chatgpt-api%E5%85%85%E5%80%BC-%E5%8D%87%E7%BA%A7plus-%E6%95%99%E7%A8%8B-%E8%99%9A%E6%8B%9F%E4%BF%A1%E7%94%A8%E5%8D%A1/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Chatgpt-api充值-升级plus-教程-虚拟信用卡</p>
           <p class='content'>最近碰到好多同学问 api怎么充值 &#x2F; gpt怎么升级plus，索性就写个教程。
 1. 准备
 一个openai账号
@@ -3038,6 +3032,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 一张用于付款的虚拟信用卡
 
 ①的话网上的教程已...</p>
+        </a>
+      
+      
+        <a class='next' href='/2023/05/04/%E6%97%A5%E5%B8%B8%E5%B7%A5%E5%85%B7/%E5%9B%BD%E5%86%85%E6%89%8B%E6%9C%BA%E5%8F%B7%E6%B3%A8%E5%86%8CGoogle%E8%B4%A6%E5%8F%B7%EF%BC%882024%E4%BA%B2%E6%B5%8B%E6%9C%89%E6%95%88%EF%BC%89/'>
+          <p class='title'>国内手机号注册Google账号（2024亲测有效）<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>国内手机号注册Google账号（2024亲测有效）1. 注册账号我们点击创建账号（请确认能访问Goolge，推荐使用Chrome浏览器）
+https://accounts.google.com/...</p>
         </a>
       
     </div>
@@ -3479,9 +3480,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   function check_giscus() {
     if (volantis.dark.mode === "dark") {
-      volantis.giscus.Theme = 'dark';
+      volantis.giscus.Theme = 'preferred_color_scheme';
     } else {
-      volantis.giscus.Theme = 'light';
+      volantis.giscus.Theme = 'preferred_color_scheme';
     }
 
     return document.getElementById("giscus_container");
@@ -3490,7 +3491,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   function pjax_giscus() {
     const HEAD = check_giscus();
     if (!HEAD) return;
-    let cfg = Object.assign({"theme":{"light":"light","dark":"dark"}},pdata.commentConfig)
+    let cfg = Object.assign({"theme":{"light":"preferred_color_scheme","dark":"preferred_color_scheme"},"repo":"Sn0wm1an/blog-comments","repo-id":"R_kgDORhfF7g","category":"Announcements","category-id":"DIC_kwDORhfF7s4C38hM","mapping":"pathname","reactions-enabled":"1","emit-metadata":"0","lang":"zh-CN"},pdata.commentConfig)
     const script = document.createElement('script');
     script.setAttribute('src', 'https://giscus.app/client.js');
     Object.keys(cfg).forEach(k=>{

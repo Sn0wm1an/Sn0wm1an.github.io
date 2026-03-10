@@ -2250,7 +2250,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1772973689139),
+    lastupdate: new Date(1773135953931),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2999,18 +2999,17 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2023/05/04/%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Node-js%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%BA%8C%EF%BC%89/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Node.js学习（二）</p>
-          <p class='content'>Node.js学习（二）1.文件系统Node.js 提供一组类似 UNIX（POSIX）标准的文件操作API。 Node 导入文件系统模块(fs)语法如下所示：
-1var fs = requir...</p>
+        <a class='prev' href='/2023/05/04/%E6%97%A5%E5%B8%B8%E5%B7%A5%E5%85%B7/%E5%9B%BD%E5%86%85%E6%89%8B%E6%9C%BA%E5%8F%B7%E6%B3%A8%E5%86%8CGoogle%E8%B4%A6%E5%8F%B7%EF%BC%882024%E4%BA%B2%E6%B5%8B%E6%9C%89%E6%95%88%EF%BC%89/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>国内手机号注册Google账号（2024亲测有效）</p>
+          <p class='content'>国内手机号注册Google账号（2024亲测有效）1. 注册账号我们点击创建账号（请确认能访问Goolge，推荐使用Chrome浏览器）
+https://accounts.google.com/...</p>
         </a>
       
       
-        <a class='next' href='/2023/05/04/%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/VUE%E5%AD%A6%E4%B9%A0-%E4%B8%80/'>
-          <p class='title'>VUE学习-一<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>教程来自https://cn.vuejs.org/tutorial
-https://cn.vuejs.org/guide/essentials/application.html
-1.创建一个VU...</p>
+        <a class='next' href='/2023/05/04/%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/django%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%BA%8C%EF%BC%89/'>
+          <p class='title'>django学习（二）<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>教程来源于菜鸟：https://www.runoob.com/django/django-form.html
+一、Django 表单HTML表单是网站交互性的经典方式。 本章将介绍如何用Djan...</p>
         </a>
       
     </div>
@@ -3452,9 +3451,9 @@ https://cn.vuejs.org/guide/essentials/application.html
 
   function check_giscus() {
     if (volantis.dark.mode === "dark") {
-      volantis.giscus.Theme = 'dark';
+      volantis.giscus.Theme = 'preferred_color_scheme';
     } else {
-      volantis.giscus.Theme = 'light';
+      volantis.giscus.Theme = 'preferred_color_scheme';
     }
 
     return document.getElementById("giscus_container");
@@ -3463,7 +3462,7 @@ https://cn.vuejs.org/guide/essentials/application.html
   function pjax_giscus() {
     const HEAD = check_giscus();
     if (!HEAD) return;
-    let cfg = Object.assign({"theme":{"light":"light","dark":"dark"}},pdata.commentConfig)
+    let cfg = Object.assign({"theme":{"light":"preferred_color_scheme","dark":"preferred_color_scheme"},"repo":"Sn0wm1an/blog-comments","repo-id":"R_kgDORhfF7g","category":"Announcements","category-id":"DIC_kwDORhfF7s4C38hM","mapping":"pathname","reactions-enabled":"1","emit-metadata":"0","lang":"zh-CN"},pdata.commentConfig)
     const script = document.createElement('script');
     script.setAttribute('src', 'https://giscus.app/client.js');
     Object.keys(cfg).forEach(k=>{

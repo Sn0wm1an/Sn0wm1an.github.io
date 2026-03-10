@@ -2250,7 +2250,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1772973689139),
+    lastupdate: new Date(1773135953931),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2910,16 +2910,21 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2023/05/04/%E5%AF%86%E7%A0%81%E6%B8%97%E9%80%8F%E7%AC%94%E8%AE%B0/DNS%E9%9A%A7%E9%81%93-FRP%E9%9A%A7%E9%81%93/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>DNS隧道-FRP隧道</p>
-          <p class='content'>DNS隧道+FRP隧道搭建一、DNS隧道准备1.DNS隧道介绍DNS隧道，是隧道技术的一种。当我们HTTP、HTTPS这样的上层协议、正反向端口转发都失败的时候，可以尝试DNS隧道。DNS隧道很...</p>
+        <a class='prev' href='/2023/05/04/%E5%AF%86%E7%A0%81%E6%B8%97%E9%80%8F%E7%AC%94%E8%AE%B0/%E5%AF%86%E7%A0%81%E5%AD%A6-%E5%AF%86%E7%A0%81%E5%AD%A6%E6%8C%87%E5%AF%BC/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>密码学-密码学指导</p>
+          <p class='content'>密码学指导一、数学功底1 数论
+整除理论（了解素数、合数、因数、倍数、整除等基本概念，掌握唯一分解定理、裴蜀定理、扩展欧几里得定理、算数基本定理等基本定理）
+同余理论（了解同余、原根、底数、指数...</p>
         </a>
       
       
-        <a class='next' href='/2023/05/04/%E5%AF%86%E7%A0%81%E6%B8%97%E9%80%8F%E7%AC%94%E8%AE%B0/%E5%AF%86%E7%A0%81%E5%AD%A6-unusualrsa1/'>
-          <p class='title'>密码学-unusualrsa1<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>ctfshow-unusualrsa11 题解下载的代码如下
-12345678910111213141516171819202122# *********************# @Autho...</p>
+        <a class='next' href='/2023/05/04/%E5%AF%86%E7%A0%81%E6%B8%97%E9%80%8F%E7%AC%94%E8%AE%B0/%E5%AF%86%E7%A0%81%E5%AD%A6-ctfshow-%E5%86%85%E9%83%A8%E8%B5%9B-%E7%AD%BE%E5%88%B0/'>
+          <p class='title'>密码学-ctfshow-内部赛-签到<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>编码工具:肥肠的好用
+https://gchq.github.io/CyberChef
+1 base64下载文档发现是一个base64加密，解密完发现是这个，但是不知道这个是什么，搜索一下
+
+2...</p>
         </a>
       
     </div>
@@ -3361,9 +3366,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   function check_giscus() {
     if (volantis.dark.mode === "dark") {
-      volantis.giscus.Theme = 'dark';
+      volantis.giscus.Theme = 'preferred_color_scheme';
     } else {
-      volantis.giscus.Theme = 'light';
+      volantis.giscus.Theme = 'preferred_color_scheme';
     }
 
     return document.getElementById("giscus_container");
@@ -3372,7 +3377,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   function pjax_giscus() {
     const HEAD = check_giscus();
     if (!HEAD) return;
-    let cfg = Object.assign({"theme":{"light":"light","dark":"dark"}},pdata.commentConfig)
+    let cfg = Object.assign({"theme":{"light":"preferred_color_scheme","dark":"preferred_color_scheme"},"repo":"Sn0wm1an/blog-comments","repo-id":"R_kgDORhfF7g","category":"Announcements","category-id":"DIC_kwDORhfF7s4C38hM","mapping":"pathname","reactions-enabled":"1","emit-metadata":"0","lang":"zh-CN"},pdata.commentConfig)
     const script = document.createElement('script');
     script.setAttribute('src', 'https://giscus.app/client.js');
     Object.keys(cfg).forEach(k=>{

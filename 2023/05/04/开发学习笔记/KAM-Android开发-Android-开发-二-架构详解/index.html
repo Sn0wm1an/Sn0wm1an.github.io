@@ -2250,7 +2250,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1772973689139),
+    lastupdate: new Date(1773135953931),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2923,18 +2923,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2023/05/04/%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/KAM-Android%E5%BC%80%E5%8F%91-Android%E5%BC%80%E5%8F%91-%E4%B8%80-%E7%AC%AC%E4%B8%80%E4%B8%AAAPP/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>KAM-Android开发-Android开发-一-第一个APP</p>
-          <p class='content'>Android开发(一) 第一个APP一、安装Android Studio(archlinux)我用的是archlinux系统因此我用命令行直接安装
-1yay -S android-studio...</p>
+        <a class='prev' href='/2023/05/04/%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/KAM-Android%E5%BC%80%E5%8F%91-Android-%E5%BC%80%E5%8F%91-%E4%B8%89-%E9%A1%B5%E9%9D%A2%E8%AE%BE%E8%AE%A1-%E5%9F%BA%E7%A1%80-2eced1845ef949a091a056a206102099/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>KAM-Android开发-Android-开发-三-页面设计-基础-2eced1845ef949a091a056a206102099</p>
+          <p class='content'>教程：
+https://ithelp.ithome.com.tw/m/articles/10192957
+https://blog.csdn.net/huangyimo/article/deta...</p>
         </a>
       
       
-        <a class='next' href='/2023/05/04/%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Docker%E5%AD%A6%E4%B9%A0-%E5%9B%9B-%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E4%B8%8E%E6%9C%8D%E5%8A%A1%E6%90%AD%E5%BB%BA-9eb8186804694de18718aa6fd4ae82a4/'>
-          <p class='title'>Docker学习-四-文件传输与服务搭建-9eb8186804694de18718aa6fd4ae82a4<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>Docker学习(四):文件传输与服务搭建一、文件传输1.先拿到容器ID全称拿到短ID
-
-1docker inspect -f &#x27;&#123;&#123;.Id&#125;&#125;...</p>
+        <a class='next' href='/2023/05/04/%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/KAM-Android%E5%BC%80%E5%8F%91-Android%E5%BC%80%E5%8F%91-%E4%B8%80-%E7%AC%AC%E4%B8%80%E4%B8%AAAPP/'>
+          <p class='title'>KAM-Android开发-Android开发-一-第一个APP<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>Android开发(一) 第一个APP一、安装Android Studio(archlinux)我用的是archlinux系统因此我用命令行直接安装
+1yay -S android-studio...</p>
         </a>
       
     </div>
@@ -3376,9 +3376,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   function check_giscus() {
     if (volantis.dark.mode === "dark") {
-      volantis.giscus.Theme = 'dark';
+      volantis.giscus.Theme = 'preferred_color_scheme';
     } else {
-      volantis.giscus.Theme = 'light';
+      volantis.giscus.Theme = 'preferred_color_scheme';
     }
 
     return document.getElementById("giscus_container");
@@ -3387,7 +3387,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   function pjax_giscus() {
     const HEAD = check_giscus();
     if (!HEAD) return;
-    let cfg = Object.assign({"theme":{"light":"light","dark":"dark"}},pdata.commentConfig)
+    let cfg = Object.assign({"theme":{"light":"preferred_color_scheme","dark":"preferred_color_scheme"},"repo":"Sn0wm1an/blog-comments","repo-id":"R_kgDORhfF7g","category":"Announcements","category-id":"DIC_kwDORhfF7s4C38hM","mapping":"pathname","reactions-enabled":"1","emit-metadata":"0","lang":"zh-CN"},pdata.commentConfig)
     const script = document.createElement('script');
     script.setAttribute('src', 'https://giscus.app/client.js');
     Object.keys(cfg).forEach(k=>{

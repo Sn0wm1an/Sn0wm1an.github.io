@@ -2250,7 +2250,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1772973689139),
+    lastupdate: new Date(1773135953931),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2863,16 +2863,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2023/05/04/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90-metaGEM%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%AE%B0-%E8%A7%A3%E5%86%B3%E5%90%84%E7%A7%8D%E9%97%AE%E9%A2%98-2024-1%EF%BC%88%E4%B8%80%EF%BC%89-2a55eec867d5441b9829bd5428024882/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>生信分析-metaGEM使用小记-解决各种问题-2024-1（一）-2a55eec867d5441b9829bd5428024882</p>
-          <p class='content'>metaGEM使用小记(解决各种问题)2024.1(一)前言，如何把数据从百度云上下载到linux服务器上可以直接通过pip下载：pip install bypy -y
-第一次使用时需要随便输入...</p>
+        <a class='prev' href='/2023/05/04/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90-metaGEM%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%AE%B0-%E8%A7%A3%E5%86%B3%E5%90%84%E7%A7%8D%E9%97%AE%E9%A2%98-2024-2%EF%BC%88%E4%B8%89%EF%BC%89/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>生信分析-metaGEM使用小记-解决各种问题-2024-2（三）</p>
+          <p class='content'>正式流程这是原始文件夹省略了这些文件的内容，tree -I &#39;scripts|rules|envs&#39;
+每次新生成的文件和文件夹会用*标记出来
+12345678910111213....</p>
         </a>
       
       
-        <a class='next' href='/2023/05/04/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90-metaGEM%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%AE%B0-%E8%A7%A3%E5%86%B3%E5%90%84%E7%A7%8D%E9%97%AE%E9%A2%98-2024-2%EF%BC%88%E4%BA%8C%EF%BC%89-daf9e5675b4d49cc855dd652b38a99e5/'>
-          <p class='title'>生信分析-metaGEM使用小记-解决各种问题-2024-2（二）-daf9e5675b4d49cc855dd652b38a99e5<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>书接上文，貌似配置还有点问题。跑了半天以后迟迟看不到结果，htop一看CPU占用几乎为0，应该是没跑起来，squeue 再一看，状态是PD，意思是等待，正常情况应该是R。于是我有网上找了下原因，...</p>
+        <a class='next' href='/2023/05/04/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90-%E9%80%9A%E8%BF%87%E5%85%B1%E8%A1%A8%E8%BE%BE%E7%BD%91%E7%BB%9C%E5%88%86%E6%9E%90%EF%BC%88WGCNA%EF%BC%89/'>
+          <p class='title'>生信分析-通过共表达网络分析（WGCNA）<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>文章解析：谭永飞. 通过共表达网络分析 (WGCNA) 探究前列腺癌发生与进展相关功能基因模块. MS thesis. 吉林大学, 2018.
+数据来源：TCGA（The Cancer Geno...</p>
         </a>
       
     </div>
@@ -3314,9 +3316,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   function check_giscus() {
     if (volantis.dark.mode === "dark") {
-      volantis.giscus.Theme = 'dark';
+      volantis.giscus.Theme = 'preferred_color_scheme';
     } else {
-      volantis.giscus.Theme = 'light';
+      volantis.giscus.Theme = 'preferred_color_scheme';
     }
 
     return document.getElementById("giscus_container");
@@ -3325,7 +3327,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   function pjax_giscus() {
     const HEAD = check_giscus();
     if (!HEAD) return;
-    let cfg = Object.assign({"theme":{"light":"light","dark":"dark"}},pdata.commentConfig)
+    let cfg = Object.assign({"theme":{"light":"preferred_color_scheme","dark":"preferred_color_scheme"},"repo":"Sn0wm1an/blog-comments","repo-id":"R_kgDORhfF7g","category":"Announcements","category-id":"DIC_kwDORhfF7s4C38hM","mapping":"pathname","reactions-enabled":"1","emit-metadata":"0","lang":"zh-CN"},pdata.commentConfig)
     const script = document.createElement('script');
     script.setAttribute('src', 'https://giscus.app/client.js');
     Object.keys(cfg).forEach(k=>{

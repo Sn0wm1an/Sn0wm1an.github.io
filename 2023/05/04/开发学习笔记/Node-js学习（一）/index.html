@@ -2250,7 +2250,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1772973689139),
+    lastupdate: new Date(1773135953931),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2964,18 +2964,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2023/05/04/%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Docker%E5%AD%A6%E4%B9%A0-%E5%9B%9B-%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E4%B8%8E%E6%9C%8D%E5%8A%A1%E6%90%AD%E5%BB%BA-9eb8186804694de18718aa6fd4ae82a4/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Docker学习-四-文件传输与服务搭建-9eb8186804694de18718aa6fd4ae82a4</p>
-          <p class='content'>Docker学习(四):文件传输与服务搭建一、文件传输1.先拿到容器ID全称拿到短ID
-
-1docker inspect -f &#x27;&#123;&#123;.Id&#125;&#125;...</p>
+        <a class='prev' href='/2023/05/04/%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/KAM-Android%E5%BC%80%E5%8F%91-Material-Design-%E5%85%A5%E9%97%A8-%E4%B8%80-Material-Design%E6%98%AF%E4%BB%80%E4%B9%88/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>KAM-Android开发-Material-Design-入门-一-Material-Design是什么</p>
+          <p class='content'>参考https://juejin.cn/post/6844903998047125518
+https://www.mdui.org/design/material-design/introduc...</p>
         </a>
       
       
-        <a class='next' href='/2023/05/04/%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/KAM-Android%E5%BC%80%E5%8F%91-Android-%E5%BC%80%E5%8F%91-%E5%9B%9B-%E6%96%87%E4%BB%B6%E5%85%B3%E7%B3%BB%E8%AF%A6%E8%A7%A3activaty%E5%8F%8Aintens%E4%BB%8B%E7%BB%8D-d8484e61c89d4b84ae997093ef114d01/'>
-          <p class='title'>KAM-Android开发-Android-开发-四-文件关系详解activaty及intens介绍-d8484e61c89d4b84ae997093ef114d01<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>参考自Google官方教程：
-https://www.youtube.com/watch?v=3dsAuLkDTUc&amp;list=RDCMUC8QMvQrV1bsK7WO37QpSxSg&...</p>
+        <a class='next' href='/2023/05/04/%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/VUE%E5%AD%A6%E4%B9%A0-%E4%B8%80/'>
+          <p class='title'>VUE学习-一<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>教程来自https://cn.vuejs.org/tutorial
+https://cn.vuejs.org/guide/essentials/application.html
+1.创建一个VU...</p>
         </a>
       
     </div>
@@ -3417,9 +3417,9 @@ https://www.youtube.com/watch?v=3dsAuLkDTUc&amp;list=RDCMUC8QMvQrV1bsK7WO37QpSxS
 
   function check_giscus() {
     if (volantis.dark.mode === "dark") {
-      volantis.giscus.Theme = 'dark';
+      volantis.giscus.Theme = 'preferred_color_scheme';
     } else {
-      volantis.giscus.Theme = 'light';
+      volantis.giscus.Theme = 'preferred_color_scheme';
     }
 
     return document.getElementById("giscus_container");
@@ -3428,7 +3428,7 @@ https://www.youtube.com/watch?v=3dsAuLkDTUc&amp;list=RDCMUC8QMvQrV1bsK7WO37QpSxS
   function pjax_giscus() {
     const HEAD = check_giscus();
     if (!HEAD) return;
-    let cfg = Object.assign({"theme":{"light":"light","dark":"dark"}},pdata.commentConfig)
+    let cfg = Object.assign({"theme":{"light":"preferred_color_scheme","dark":"preferred_color_scheme"},"repo":"Sn0wm1an/blog-comments","repo-id":"R_kgDORhfF7g","category":"Announcements","category-id":"DIC_kwDORhfF7s4C38hM","mapping":"pathname","reactions-enabled":"1","emit-metadata":"0","lang":"zh-CN"},pdata.commentConfig)
     const script = document.createElement('script');
     script.setAttribute('src', 'https://giscus.app/client.js');
     Object.keys(cfg).forEach(k=>{

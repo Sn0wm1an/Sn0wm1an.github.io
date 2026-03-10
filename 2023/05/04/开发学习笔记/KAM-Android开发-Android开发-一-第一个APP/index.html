@@ -2250,7 +2250,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1772973689139),
+    lastupdate: new Date(1773135953931),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2857,21 +2857,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2023/05/04/%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/KAM-Android%E5%BC%80%E5%8F%91-Android-%E5%BC%80%E5%8F%91-%E4%BA%94-Activate%E8%AF%A6%E8%A7%A3-7ec3b6428c9643f99de34f635ac6f050/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>KAM-Android开发-Android-开发-五-Activate详解-7ec3b6428c9643f99de34f635ac6f050</p>
-          <p class='content'>参考教程：
-https://www.xinbaoku.com/archive/wdFDf6FB.html
-(本节是Java代码)
-Activity 是用户接口程序，原则上它会提供给用户一个交互式...</p>
-        </a>
-      
-      
-        <a class='next' href='/2023/05/04/%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/KAM-Android%E5%BC%80%E5%8F%91-Android-%E5%BC%80%E5%8F%91-%E4%BA%8C-%E6%9E%B6%E6%9E%84%E8%AF%A6%E8%A7%A3/'>
-          <p class='title'>KAM-Android开发-Android-开发-二-架构详解<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+        <a class='prev' href='/2023/05/04/%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/KAM-Android%E5%BC%80%E5%8F%91-Android-%E5%BC%80%E5%8F%91-%E4%BA%8C-%E6%9E%B6%E6%9E%84%E8%AF%A6%E8%A7%A3/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>KAM-Android开发-Android-开发-二-架构详解</p>
           <p class='content'>Android 开发(二) 架构详解教程来自我们的老朋友菜鸟
 https://www.runoob.com/android/android-architecture.html
 还有
 https:...</p>
+        </a>
+      
+      
+        <a class='next' href='/2023/05/04/%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/KAM-Android%E5%BC%80%E5%8F%91-Android-%E5%BC%80%E5%8F%91-%E5%9B%9B-%E6%96%87%E4%BB%B6%E5%85%B3%E7%B3%BB%E8%AF%A6%E8%A7%A3activaty%E5%8F%8Aintens%E4%BB%8B%E7%BB%8D-d8484e61c89d4b84ae997093ef114d01/'>
+          <p class='title'>KAM-Android开发-Android-开发-四-文件关系详解activaty及intens介绍-d8484e61c89d4b84ae997093ef114d01<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>参考自Google官方教程：
+https://www.youtube.com/watch?v=3dsAuLkDTUc&amp;list=RDCMUC8QMvQrV1bsK7WO37QpSxSg&...</p>
         </a>
       
     </div>
@@ -3313,9 +3311,9 @@ https:...</p>
 
   function check_giscus() {
     if (volantis.dark.mode === "dark") {
-      volantis.giscus.Theme = 'dark';
+      volantis.giscus.Theme = 'preferred_color_scheme';
     } else {
-      volantis.giscus.Theme = 'light';
+      volantis.giscus.Theme = 'preferred_color_scheme';
     }
 
     return document.getElementById("giscus_container");
@@ -3324,7 +3322,7 @@ https:...</p>
   function pjax_giscus() {
     const HEAD = check_giscus();
     if (!HEAD) return;
-    let cfg = Object.assign({"theme":{"light":"light","dark":"dark"}},pdata.commentConfig)
+    let cfg = Object.assign({"theme":{"light":"preferred_color_scheme","dark":"preferred_color_scheme"},"repo":"Sn0wm1an/blog-comments","repo-id":"R_kgDORhfF7g","category":"Announcements","category-id":"DIC_kwDORhfF7s4C38hM","mapping":"pathname","reactions-enabled":"1","emit-metadata":"0","lang":"zh-CN"},pdata.commentConfig)
     const script = document.createElement('script');
     script.setAttribute('src', 'https://giscus.app/client.js');
     Object.keys(cfg).forEach(k=>{

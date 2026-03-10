@@ -2250,7 +2250,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1772973689139),
+    lastupdate: new Date(1773135953931),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2784,7 +2784,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>现在就相当于公网服务器与kali之间生成了一个虚拟网卡，这两个虚拟网卡之间是互通的。</p>
 <p><img src="https://my-bloag-image-xiaowu.oss-cn-beijing.aliyuncs.com/image/202403022201169.png" class="lazyload" data-srcset="https://my-bloag-image-xiaowu.oss-cn-beijing.aliyuncs.com/image/202403022201169.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="214231434"></p>
 <p>在公网服务器上连接kali的虚拟地址，使用ssh做一个动态端口转发。</p>
-<p>ssh -D 60688 <a href="mailto:&#114;&#111;&#111;&#116;&#x40;&#49;&#57;&#50;&#x2e;&#49;&#54;&#x38;&#46;&#50;&#48;&#48;&#46;&#50;">root@192.168.50.2</a></p>
+<p>ssh -D 60688 <a href="mailto:&#114;&#x6f;&#x6f;&#x74;&#64;&#x31;&#57;&#x32;&#46;&#49;&#x36;&#x38;&#x2e;&#x32;&#x30;&#48;&#46;&#50;">root@192.168.50.2</a></p>
 <p>但此时只相当于在公网服务器的192.168.50.1的60688端口搭建了一个socks5代理隧道，如果想要本地使用该隧道是行不通的，因为192.168.50.1相当于一个内网地址，是不能直接访问得到的，所以需要将公网服务器虚拟网卡地址192.168.50.1的60688端口数据转发到公网服务器公网地址的一个端口上。这个端口转发我还没试(不知道采用哪个工具会好点)。</p>
 <p>这里使用FRP搭建反向隧道</p>
 <h3 id="3-FRP搭建隧道"><a href="#3-FRP搭建隧道" class="headerlink" title="3.FRP搭建隧道"></a>3.FRP搭建隧道</h3><p>下载FRP对应的版本，因为FRP在0.50以后更新，语法与操作和之前的版本很不一样，因此咨询了一个大佬新版本的使用方法，下面链接时FRP的下载地址。</p>
@@ -2939,9 +2939,11 @@ Inte...</p>
         </a>
       
       
-        <a class='next' href='/2023/05/04/%E5%AF%86%E7%A0%81%E6%B8%97%E9%80%8F%E7%AC%94%E8%AE%B0/%E5%AF%86%E7%A0%81%E5%AD%A6-RSA%E6%95%B0%E5%AD%A6%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90/'>
-          <p class='title'>密码学-RSA数学原理解析<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>RSA数学原理解析1.引言RSA算法(RSA algorithm)是一种非对称加密算法, 广泛应用在互联网和电子商务中. 它使用一对密钥进行加密和解密, 分别称为公钥(public key)和私...</p>
+        <a class='next' href='/2023/05/04/%E5%AF%86%E7%A0%81%E6%B8%97%E9%80%8F%E7%AC%94%E8%AE%B0/%E5%AF%86%E7%A0%81%E5%AD%A6-%E5%AF%86%E7%A0%81%E5%AD%A6%E6%8C%87%E5%AF%BC/'>
+          <p class='title'>密码学-密码学指导<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>密码学指导一、数学功底1 数论
+整除理论（了解素数、合数、因数、倍数、整除等基本概念，掌握唯一分解定理、裴蜀定理、扩展欧几里得定理、算数基本定理等基本定理）
+同余理论（了解同余、原根、底数、指数...</p>
         </a>
       
     </div>
@@ -3383,9 +3385,9 @@ Inte...</p>
 
   function check_giscus() {
     if (volantis.dark.mode === "dark") {
-      volantis.giscus.Theme = 'dark';
+      volantis.giscus.Theme = 'preferred_color_scheme';
     } else {
-      volantis.giscus.Theme = 'light';
+      volantis.giscus.Theme = 'preferred_color_scheme';
     }
 
     return document.getElementById("giscus_container");
@@ -3394,7 +3396,7 @@ Inte...</p>
   function pjax_giscus() {
     const HEAD = check_giscus();
     if (!HEAD) return;
-    let cfg = Object.assign({"theme":{"light":"light","dark":"dark"}},pdata.commentConfig)
+    let cfg = Object.assign({"theme":{"light":"preferred_color_scheme","dark":"preferred_color_scheme"},"repo":"Sn0wm1an/blog-comments","repo-id":"R_kgDORhfF7g","category":"Announcements","category-id":"DIC_kwDORhfF7s4C38hM","mapping":"pathname","reactions-enabled":"1","emit-metadata":"0","lang":"zh-CN"},pdata.commentConfig)
     const script = document.createElement('script');
     script.setAttribute('src', 'https://giscus.app/client.js');
     Object.keys(cfg).forEach(k=>{
