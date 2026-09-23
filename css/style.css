@@ -7053,6 +7053,29 @@ pre {
   -moz-transition: color 0.25s ease;
   -o-transition: color 0.25s ease;
   -ms-transition: color 0.25s ease;
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: -ms-inline-flexbox /* TWEENER - IE 10 */;
+  display: -webkit-inline-flex /* NEW - Chrome */;
+  display: inline-flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.l_header a.title img.logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--ah-border);
+  outline: 2px solid var(--ah-accent-line);
+  outline-offset: 1px;
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  -webkit-flex: 0 0;
+  -ms-flex: 0 0;
+  flex: 0 0;
 }
 .l_header a.title:hover {
   color: var(--ah-accent);
