@@ -53,28 +53,28 @@
   display: none;
 }
 :root {
-  --color-site-body: #f4f4f4;
-  --color-site-bg: #f4f4f4;
+  --color-site-body: #f6f3ec;
+  --color-site-bg: #f6f3ec;
   --color-site-inner: #fff;
-  --color-site-footer: #666;
-  --color-card: #fff;
-  --color-text: #444;
-  --color-block: #f6f6f6;
-  --color-inlinecode: #c74f00;
-  --color-codeblock: #fff7ea;
-  --color-h1: #3a3a3a;
-  --color-h2: #3a3a3a;
-  --color-h3: #333;
-  --color-h4: #444;
-  --color-h5: #555;
-  --color-h6: #666;
-  --color-p: #444;
-  --color-list: #666;
-  --color-list-hl: #30ad91;
-  --color-meta: #888;
+  --color-site-footer: #8f8778;
+  --color-card: #fffefa;
+  --color-text: #4c463c;
+  --color-block: #f4f0e7;
+  --color-inlinecode: #b5382a;
+  --color-codeblock: #f6efe2;
+  --color-h1: #26221b;
+  --color-h2: #26221b;
+  --color-h3: #26221b;
+  --color-h4: #3a352c;
+  --color-h5: #3a352c;
+  --color-h6: #3a352c;
+  --color-p: #4c463c;
+  --color-list: #4c463c;
+  --color-list-hl: #902c21;
+  --color-meta: #8f8778;
   --color-read-bkg: #e0d8c8;
   --color-read-post: #f8f1e2;
-  --color-copyright-bkg: #f5f5f5;
+  --color-copyright-bkg: #f4f0e7;
 }
 * {
   box-sizing: border-box;
@@ -92,13 +92,13 @@
   background: transparent;
 }
 *::-webkit-scrollbar-thumb {
-  background: #3dd9b6;
+  background: #b5382a;
   cursor: pointer;
   border-radius: 2px;
   -webkit-border-radius: 2px;
 }
 *::-webkit-scrollbar-thumb:hover {
-  background: #ff5722;
+  background: #96291d;
 }
 html {
   color: var(--color-text);
@@ -115,13 +115,13 @@ html >::-webkit-scrollbar-track-piece {
   background: transparent;
 }
 html >::-webkit-scrollbar-thumb {
-  background: #3dd9b6;
+  background: #b5382a;
   cursor: pointer;
   border-radius: 2px;
   -webkit-border-radius: 2px;
 }
 html >::-webkit-scrollbar-thumb:hover {
-  background: #ff5722;
+  background: #96291d;
 }
 body {
   background-color: var(--color-site-body);
@@ -144,7 +144,7 @@ body.modal-active {
   }
 }
 a {
-  color: #2092ec;
+  color: #b5382a;
   cursor: pointer;
   text-decoration: none;
   transition: all 0.28s ease;
@@ -155,7 +155,7 @@ a {
   -ms-transition: all 0.28s ease;
 }
 a:hover {
-  color: #ff5722;
+  color: #96291d;
 }
 a:active,
 a:hover {
@@ -191,7 +191,7 @@ hr {
   border: 0;
   border-radius: 1px;
   -webkit-border-radius: 1px;
-  border-bottom: 1px solid rgba(68,68,68,0.1);
+  border-bottom: 1px solid rgba(76,70,60,0.1);
 }
 button,
 input {
@@ -207,7 +207,7 @@ button {
 }
 @supports (backdrop-filter: blur(20px)) {
   .blur {
-    background: rgba(255,255,255,0.9) !important;
+    background: rgba(255,254,250,0.9) !important;
     backdrop-filter: saturate(200%) blur(20px);
   }
 }
@@ -569,7 +569,7 @@ button {
   width: 32px;
   top: 0;
   left: 5px;
-  color: rgba(68,68,68,0.75);
+  color: rgba(76,70,60,0.75);
 }
 .cover-wrapper .cover-body .m_search .input {
   display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
@@ -587,7 +587,7 @@ button {
   padding-left: 36px;
   border-radius: 1.4rem;
   -webkit-border-radius: 1.4rem;
-  background: rgba(255,255,255,0.6);
+  background: rgba(255,254,250,0.6);
   backdrop-filter: blur(10px);
   border: none;
   color: var(--color-text);
@@ -598,10 +598,10 @@ button {
   }
 }
 .cover-wrapper .cover-body .m_search .input:hover {
-  background: rgba(255,255,255,0.8);
+  background: rgba(255,254,250,0.8);
 }
 .cover-wrapper .cover-body .m_search .input:focus {
-  background: #fff;
+  background: #fffefa;
 }
 .cover-wrapper .list-h {
   display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
@@ -737,7 +737,7 @@ button {
   border-bottom: none;
   text-align: center;
   align-content: flex-end;
-  color: rgba(68,68,68,0.7);
+  color: rgba(76,70,60,0.7);
   font-size: 1.5rem;
 }
 @media screen and (max-width: 500px) {
@@ -769,7 +769,7 @@ button {
 .cover-wrapper.dock .menu .list-h a.active i+p,
 .cover-wrapper.featured .menu .list-h a.active i+p,
 .cover-wrapper.focus .menu .list-h a.active i+p {
-  color: #3dd9b6;
+  color: #b5382a;
 }
 .cover-wrapper.dock .menu .list-h a.active img+p,
 .cover-wrapper.featured .menu .list-h a.active img+p,
@@ -785,7 +785,7 @@ button {
   margin-bottom: 48px;
 }
 .cover-wrapper.dock .menu {
-  background: rgba(255,255,255,0.5);
+  background: rgba(255,254,250,0.5);
   position: absolute;
   bottom: 0;
   max-width: 100%;
@@ -814,18 +814,18 @@ button {
     background: transparent;
   }
   .cover-wrapper.dock .menu .list-h::-webkit-scrollbar-thumb {
-    background: #3dd9b6;
+    background: #b5382a;
     cursor: pointer;
     border-radius: 0;
     -webkit-border-radius: 0;
   }
   .cover-wrapper.dock .menu .list-h::-webkit-scrollbar-thumb:hover {
-    background: #ff5722;
+    background: #96291d;
   }
 }
 @supports (backdrop-filter: blur(20px)) {
   .cover-wrapper.dock .menu {
-    background: rgba(255,255,255,0.5);
+    background: rgba(255,254,250,0.5);
     backdrop-filter: saturate(200%) blur(20px);
   }
 }
@@ -1042,7 +1042,7 @@ button {
   -moz-transition: all 0.28s ease;
   -o-transition: all 0.28s ease;
   -ms-transition: all 0.28s ease;
-  color: #3dd9b6;
+  color: #b5382a;
 }
 .l_header .switcher >li >a:hover {
   border: none;
@@ -1154,7 +1154,7 @@ button {
   line-height: 1.3;
   width: 100%;
   color: var(--color-text);
-  background: #fafafa;
+  background: #fffcf0;
   box-shadow: none;
   -webkit-box-shadow: none;
   box-sizing: border-box;
@@ -1222,7 +1222,7 @@ ul.m-pc >li>a {
 }
 ul.m-pc >li>a:active,
 ul.m-pc >li>a.active {
-  border-bottom: 2px solid #3dd9b6;
+  border-bottom: 2px solid #b5382a;
 }
 ul.m-pc li:hover >ul.list-v,
 ul.list-v li:hover >ul.list-v {
@@ -1361,7 +1361,7 @@ ul.list-v >li>a:hover {
 }
 .l_header ul.nav-list-h>li >a:active,
 .l_header ul.nav-list-h>li >a.active {
-  color: #3dd9b6;
+  color: #b5382a;
 }
 .l_header ul.nav-list-h>li:hover>a {
   color: var(--color-list-hl);
@@ -2247,7 +2247,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1790143286832),
+    lastupdate: new Date(1790153040563),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2299,7 +2299,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <!-- import head_end begin -->
   <!-- import head_end end -->
   <!-- Custom Files headEnd begin-->
-  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600%3B700%3B900&display=swap">
+
   <!-- Custom Files headEnd end-->
 </head>
   <body itemscope itemtype="http://schema.org/WebPage">
@@ -2325,9 +2326,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
         <a class="title flat-box" target="_self" href='/'>
           
-            <img no-lazy class='logo' src='https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/Logo-NavBar@3x.png'/>
           
           
+            FeiYu Wu / Homepage
           
         </a>
       
@@ -2743,6 +2744,61 @@ Intel 软件防护扩展SGX（Software Guard Extension）是一项针对台式�
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/04/密码渗透笔记/DNS隧道-FRP隧道/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Feiyu Wu">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="name" content="DNS隧道-FRP隧道">
+    <meta itemprop="description" content="Feiyu Wu&#39;s personal homepage — Embodied AI, Verifiable Security, Reinforcement Learning">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2023/05/04/%E5%AF%86%E7%A0%81%E6%B8%97%E9%80%8F%E7%AC%94%E8%AE%B0/DNS%E9%9A%A7%E9%81%93-FRP%E9%9A%A7%E9%81%93/"  itemprop="url">
+        DNS隧道-FRP隧道
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        DNS隧道+FRP隧道搭建一、DNS隧道准备1.DNS隧道介绍DNS隧道，是隧道技术的一种。当我们HTTP、HTTPS这样的上层协议、正反向端口转发都失败的时候，可以尝试DNS隧道。DNS隧道很难防范，因为平时的业务等功能难免会用到DNS协议进行解析，所以防火墙大多对DNS流量是放行的状态。这时候，如果我们在不出机器构造一个恶意的域名，本地DNS服务器无法给出回答时，就会以迭代查询的方式通过...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-05-04T20:09:16-06:00">2023-05-04</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2023/05/04/%E5%AF%86%E7%A0%81%E6%B8%97%E9%80%8F%E7%AC%94%E8%AE%B0/DNS%E9%9A%A7%E9%81%93-FRP%E9%9A%A7%E9%81%93/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
   <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/04/密码渗透笔记/密码学-ctfshow-CRYPTO-内部赛-密码2-88fd6c127ebd4ad0ac2931270202748d/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Feiyu Wu">
@@ -2784,6 +2840,61 @@ Intel 软件防护扩展SGX（Software Guard Extension）是一项针对台式�
       
         <div>
           <a class='readmore' href='/2023/05/04/%E5%AF%86%E7%A0%81%E6%B8%97%E9%80%8F%E7%AC%94%E8%AE%B0/%E5%AF%86%E7%A0%81%E5%AD%A6-ctfshow-CRYPTO-%E5%86%85%E9%83%A8%E8%B5%9B-%E5%AF%86%E7%A0%812-88fd6c127ebd4ad0ac2931270202748d/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/04/密码渗透笔记/密码学-RSA数学原理解析/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Feiyu Wu">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="name" content="密码学-RSA数学原理解析">
+    <meta itemprop="description" content="Feiyu Wu&#39;s personal homepage — Embodied AI, Verifiable Security, Reinforcement Learning">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2023/05/04/%E5%AF%86%E7%A0%81%E6%B8%97%E9%80%8F%E7%AC%94%E8%AE%B0/%E5%AF%86%E7%A0%81%E5%AD%A6-RSA%E6%95%B0%E5%AD%A6%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90/"  itemprop="url">
+        密码学-RSA数学原理解析
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        RSA数学原理解析1.引言RSA算法(RSA algorithm)是一种非对称加密算法, 广泛应用在互联网和电子商务中. 它使用一对密钥进行加密和解密, 分别称为公钥(public key)和私钥(private key). 使用公钥加密的内容只能用私钥解密, 使用私钥加密的内容只能用公钥解密, 并且不能通过公钥在可行的时间内计算出私钥. 这使得加密通信不需要交换私钥, 保证了通信的安全. ...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-05-04T20:09:16-06:00">2023-05-04</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2023/05/04/%E5%AF%86%E7%A0%81%E6%B8%97%E9%80%8F%E7%AC%94%E8%AE%B0/%E5%AF%86%E7%A0%81%E5%AD%A6-RSA%E6%95%B0%E5%AD%A6%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90/' itemprop="url">
             Read More
           </a>
         </div>
@@ -2859,12 +2970,12 @@ https://gchq.github.io/CyberChef
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/04/密码渗透笔记/密码学-RSA数学原理解析/">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/04/密码渗透笔记/密码学-密码学指导/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Feiyu Wu">
   </span>
   <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="name" content="密码学-RSA数学原理解析">
+    <meta itemprop="name" content="密码学-密码学指导">
     <meta itemprop="description" content="Feiyu Wu&#39;s personal homepage — Embodied AI, Verifiable Security, Reinforcement Learning">
   </span>
   
@@ -2877,15 +2988,18 @@ https://gchq.github.io/CyberChef
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/05/04/%E5%AF%86%E7%A0%81%E6%B8%97%E9%80%8F%E7%AC%94%E8%AE%B0/%E5%AF%86%E7%A0%81%E5%AD%A6-RSA%E6%95%B0%E5%AD%A6%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90/"  itemprop="url">
-        密码学-RSA数学原理解析
+      <a href="/2023/05/04/%E5%AF%86%E7%A0%81%E6%B8%97%E9%80%8F%E7%AC%94%E8%AE%B0/%E5%AF%86%E7%A0%81%E5%AD%A6-%E5%AF%86%E7%A0%81%E5%AD%A6%E6%8C%87%E5%AF%BC/"  itemprop="url">
+        密码学-密码学指导
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        RSA数学原理解析1.引言RSA算法(RSA algorithm)是一种非对称加密算法, 广泛应用在互联网和电子商务中. 它使用一对密钥进行加密和解密, 分别称为公钥(public key)和私钥(private key). 使用公钥加密的内容只能用私钥解密, 使用私钥加密的内容只能用公钥解密, 并且不能通过公钥在可行的时间内计算出私钥. 这使得加密通信不需要交换私钥, 保证了通信的安全. ...
+        密码学指导一、数学功底1 数论
+整除理论（了解素数、合数、因数、倍数、整除等基本概念，掌握唯一分解定理、裴蜀定理、扩展欧几里得定理、算数基本定理等基本定理）
+同余理论（了解同余、原根、底数、指数、平方剩余、同余式、同余方程等基本概念，掌握欧拉定理、费马小定理、中国剩余定理、二次互反律、威尔逊定理等基本定理）
+连分数理论（了解连分数、无穷级数等基本概念，熟悉最佳有理数逼近、循环连分数展开、佩尔...
       
     
   </div>
@@ -2898,63 +3012,7 @@ https://gchq.github.io/CyberChef
       </div>
       
         <div>
-          <a class='readmore' href='/2023/05/04/%E5%AF%86%E7%A0%81%E6%B8%97%E9%80%8F%E7%AC%94%E8%AE%B0/%E5%AF%86%E7%A0%81%E5%AD%A6-RSA%E6%95%B0%E5%AD%A6%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/04/密码渗透笔记/密码学-unusualrsa1/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Feiyu Wu">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="name" content="密码学-unusualrsa1">
-    <meta itemprop="description" content="Feiyu Wu&#39;s personal homepage — Embodied AI, Verifiable Security, Reinforcement Learning">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/05/04/%E5%AF%86%E7%A0%81%E6%B8%97%E9%80%8F%E7%AC%94%E8%AE%B0/%E5%AF%86%E7%A0%81%E5%AD%A6-unusualrsa1/"  itemprop="url">
-        密码学-unusualrsa1
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        ctfshow-unusualrsa11 题解下载的代码如下
-12345678910111213141516171819202122# *********************# @Author: Lazzaro# *********************from Crypto.Util.number import getPrime,bytes_to_long,long_to_bytes...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-05-04T20:09:16-06:00">2023-05-04</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/05/04/%E5%AF%86%E7%A0%81%E6%B8%97%E9%80%8F%E7%AC%94%E8%AE%B0/%E5%AF%86%E7%A0%81%E5%AD%A6-unusualrsa1/' itemprop="url">
+          <a class='readmore' href='/2023/05/04/%E5%AF%86%E7%A0%81%E6%B8%97%E9%80%8F%E7%AC%94%E8%AE%B0/%E5%AF%86%E7%A0%81%E5%AD%A6-%E5%AF%86%E7%A0%81%E5%AD%A6%E6%8C%87%E5%AF%BC/' itemprop="url">
             Read More
           </a>
         </div>
@@ -3028,12 +3086,12 @@ https://accu.cc/content/cryptography/group_ring_field&#x2F;
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/04/密码渗透笔记/DNS隧道-FRP隧道/">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/04/密码渗透笔记/密码学-数论基础-二-—椭圆曲线/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Feiyu Wu">
   </span>
   <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="name" content="DNS隧道-FRP隧道">
+    <meta itemprop="name" content="密码学-数论基础-二-—椭圆曲线">
     <meta itemprop="description" content="Feiyu Wu&#39;s personal homepage — Embodied AI, Verifiable Security, Reinforcement Learning">
   </span>
   
@@ -3046,15 +3104,16 @@ https://accu.cc/content/cryptography/group_ring_field&#x2F;
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/05/04/%E5%AF%86%E7%A0%81%E6%B8%97%E9%80%8F%E7%AC%94%E8%AE%B0/DNS%E9%9A%A7%E9%81%93-FRP%E9%9A%A7%E9%81%93/"  itemprop="url">
-        DNS隧道-FRP隧道
+      <a href="/2023/05/04/%E5%AF%86%E7%A0%81%E6%B8%97%E9%80%8F%E7%AC%94%E8%AE%B0/%E5%AF%86%E7%A0%81%E5%AD%A6-%E6%95%B0%E8%AE%BA%E5%9F%BA%E7%A1%80-%E4%BA%8C-%E2%80%94%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF/"  itemprop="url">
+        密码学-数论基础-二-—椭圆曲线
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        DNS隧道+FRP隧道搭建一、DNS隧道准备1.DNS隧道介绍DNS隧道，是隧道技术的一种。当我们HTTP、HTTPS这样的上层协议、正反向端口转发都失败的时候，可以尝试DNS隧道。DNS隧道很难防范，因为平时的业务等功能难免会用到DNS协议进行解析，所以防火墙大多对DNS流量是放行的状态。这时候，如果我们在不出机器构造一个恶意的域名，本地DNS服务器无法给出回答时，就会以迭代查询的方式通过...
+        参考文章：
+https://accu.cc/content/cryptography/ecc/https://blog.csdn.net/qq_44925830&#x2F;article&#x2F;details&#x2F;123300315https://zhuanlan.zhihu.com/p/603240120https://juejin.cn/post/726388679675684...
       
     
   </div>
@@ -3067,7 +3126,7 @@ https://accu.cc/content/cryptography/group_ring_field&#x2F;
       </div>
       
         <div>
-          <a class='readmore' href='/2023/05/04/%E5%AF%86%E7%A0%81%E6%B8%97%E9%80%8F%E7%AC%94%E8%AE%B0/DNS%E9%9A%A7%E9%81%93-FRP%E9%9A%A7%E9%81%93/' itemprop="url">
+          <a class='readmore' href='/2023/05/04/%E5%AF%86%E7%A0%81%E6%B8%97%E9%80%8F%E7%AC%94%E8%AE%B0/%E5%AF%86%E7%A0%81%E5%AD%A6-%E6%95%B0%E8%AE%BA%E5%9F%BA%E7%A1%80-%E4%BA%8C-%E2%80%94%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF/' itemprop="url">
             Read More
           </a>
         </div>
@@ -3083,12 +3142,12 @@ https://accu.cc/content/cryptography/group_ring_field&#x2F;
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/04/密码渗透笔记/密码学-密码学指导/">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/04/开发学习笔记/Docker学习-三-Dockerfile与Compose-cc33bdd80c804e1fb3125511f62e09c2/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Feiyu Wu">
   </span>
   <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="name" content="密码学-密码学指导">
+    <meta itemprop="name" content="Docker学习-三-Dockerfile与Compose-cc33bdd80c804e1fb3125511f62e09c2">
     <meta itemprop="description" content="Feiyu Wu&#39;s personal homepage — Embodied AI, Verifiable Security, Reinforcement Learning">
   </span>
   
@@ -3101,18 +3160,18 @@ https://accu.cc/content/cryptography/group_ring_field&#x2F;
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/05/04/%E5%AF%86%E7%A0%81%E6%B8%97%E9%80%8F%E7%AC%94%E8%AE%B0/%E5%AF%86%E7%A0%81%E5%AD%A6-%E5%AF%86%E7%A0%81%E5%AD%A6%E6%8C%87%E5%AF%BC/"  itemprop="url">
-        密码学-密码学指导
+      <a href="/2023/05/04/%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Docker%E5%AD%A6%E4%B9%A0-%E4%B8%89-Dockerfile%E4%B8%8ECompose-cc33bdd80c804e1fb3125511f62e09c2/"  itemprop="url">
+        Docker学习-三-Dockerfile与Compose-cc33bdd80c804e1fb3125511f62e09c2
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        密码学指导一、数学功底1 数论
-整除理论（了解素数、合数、因数、倍数、整除等基本概念，掌握唯一分解定理、裴蜀定理、扩展欧几里得定理、算数基本定理等基本定理）
-同余理论（了解同余、原根、底数、指数、平方剩余、同余式、同余方程等基本概念，掌握欧拉定理、费马小定理、中国剩余定理、二次互反律、威尔逊定理等基本定理）
-连分数理论（了解连分数、无穷级数等基本概念，熟悉最佳有理数逼近、循环连分数展开、佩尔...
+        原文来自菜鸟：https://www.runoob.com/docker/docker-dockerfile.html
+（菜鸟讲的太详细了，泪目）
+一、什么是 Dockerfile？Dockerfile 是一个用来构建镜像的文本文件，文本内容包含了一条条构建镜像所需的指令和说明。
+1.使用 Dockerfile 定制镜像这里仅讲解如何运行 Dockerfile 文件来定制一个镜像，具体 Do...
       
     
   </div>
@@ -3125,7 +3184,7 @@ https://accu.cc/content/cryptography/group_ring_field&#x2F;
       </div>
       
         <div>
-          <a class='readmore' href='/2023/05/04/%E5%AF%86%E7%A0%81%E6%B8%97%E9%80%8F%E7%AC%94%E8%AE%B0/%E5%AF%86%E7%A0%81%E5%AD%A6-%E5%AF%86%E7%A0%81%E5%AD%A6%E6%8C%87%E5%AF%BC/' itemprop="url">
+          <a class='readmore' href='/2023/05/04/%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Docker%E5%AD%A6%E4%B9%A0-%E4%B8%89-Dockerfile%E4%B8%8ECompose-cc33bdd80c804e1fb3125511f62e09c2/' itemprop="url">
             Read More
           </a>
         </div>
@@ -3141,12 +3200,12 @@ https://accu.cc/content/cryptography/group_ring_field&#x2F;
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/04/日常工具/Chatgpt-api充值-升级plus-教程-虚拟信用卡/">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/04/开发学习笔记/Docker学习-一-安装docker（win）-842d24f88e8940f28160a957ffea2fc8/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Feiyu Wu">
   </span>
   <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="name" content="Chatgpt-api充值-升级plus-教程-虚拟信用卡">
+    <meta itemprop="name" content="Docker学习-一-安装docker（win）-842d24f88e8940f28160a957ffea2fc8">
     <meta itemprop="description" content="Feiyu Wu&#39;s personal homepage — Embodied AI, Verifiable Security, Reinforcement Learning">
   </span>
   
@@ -3159,22 +3218,18 @@ https://accu.cc/content/cryptography/group_ring_field&#x2F;
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/05/04/%E6%97%A5%E5%B8%B8%E5%B7%A5%E5%85%B7/Chatgpt-api%E5%85%85%E5%80%BC-%E5%8D%87%E7%BA%A7plus-%E6%95%99%E7%A8%8B-%E8%99%9A%E6%8B%9F%E4%BF%A1%E7%94%A8%E5%8D%A1/"  itemprop="url">
-        Chatgpt-api充值-升级plus-教程-虚拟信用卡
+      <a href="/2023/05/04/%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Docker%E5%AD%A6%E4%B9%A0-%E4%B8%80-%E5%AE%89%E8%A3%85docker%EF%BC%88win%EF%BC%89-842d24f88e8940f28160a957ffea2fc8/"  itemprop="url">
+        Docker学习-一-安装docker（win）-842d24f88e8940f28160a957ffea2fc8
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        最近碰到好多同学问 api怎么充值 &#x2F; gpt怎么升级plus，索性就写个教程。
-1. 准备
-一个openai账号
-一个好的科学上网工具
-一张用于付款的虚拟信用卡
-
-①的话网上的教程已经满天飞了 这里就按下不表 ps: 我看到有说用outlook等微软旗下的邮箱充值&#x2F;升级后容易被封的，建议用别的邮箱 （有同学建议用proton 注册很方便）
-注册Google账号（你需要有...
+        教程来自菜鸟
+一、前言因为项目的代码必须要在Linux才能运行，为了跨平台的性能考虑，因此我打算使用win+docker的形式来运行后端，开始学习。
+二、Windows Docker 安装Docker 并非是一个通用的容器工具，它依赖于已存在并运行的 Linux 内核环境。
+Docker 实质上是在已经运行的 Linux 下制造了一个隔离的文件环境，因此它执行的效率几乎等同于所部署的 Lin...
       
     
   </div>
@@ -3187,65 +3242,7 @@ https://accu.cc/content/cryptography/group_ring_field&#x2F;
       </div>
       
         <div>
-          <a class='readmore' href='/2023/05/04/%E6%97%A5%E5%B8%B8%E5%B7%A5%E5%85%B7/Chatgpt-api%E5%85%85%E5%80%BC-%E5%8D%87%E7%BA%A7plus-%E6%95%99%E7%A8%8B-%E8%99%9A%E6%8B%9F%E4%BF%A1%E7%94%A8%E5%8D%A1/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/04/日常工具/如何让自己的网站被搜索到/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Feiyu Wu">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="name" content="如何让自己的网站被搜索到">
-    <meta itemprop="description" content="Feiyu Wu&#39;s personal homepage — Embodied AI, Verifiable Security, Reinforcement Learning">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/05/04/%E6%97%A5%E5%B8%B8%E5%B7%A5%E5%85%B7/%E5%A6%82%E4%BD%95%E8%AE%A9%E8%87%AA%E5%B7%B1%E7%9A%84%E7%BD%91%E7%AB%99%E8%A2%AB%E6%90%9C%E7%B4%A2%E5%88%B0/"  itemprop="url">
-        如何让自己的网站被搜索到
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        如何让自己的网站被搜索到在有了个人网站以后，总希望更多的人来踩一踩看一看。也希望自己写的博客能够真的分享被别人搜索到，达到博客应有的分享功能。但是了解以后才发现：网站能够被搜索引擎搜索到需要自己的网站被搜索引擎收录。一般来说，能被搜索引擎所收录有三种途径：
-
-交钱：一次点击 $0.05 USD， 适用于商业推广，并会现实在右栏（广告栏）。
-网站本身知名度高，影响力高：Google 对搜索结果...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-05-04T20:09:16-06:00">2023-05-04</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/05/04/%E6%97%A5%E5%B8%B8%E5%B7%A5%E5%85%B7/%E5%A6%82%E4%BD%95%E8%AE%A9%E8%87%AA%E5%B7%B1%E7%9A%84%E7%BD%91%E7%AB%99%E8%A2%AB%E6%90%9C%E7%B4%A2%E5%88%B0/' itemprop="url">
+          <a class='readmore' href='/2023/05/04/%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Docker%E5%AD%A6%E4%B9%A0-%E4%B8%80-%E5%AE%89%E8%A3%85docker%EF%BC%88win%EF%BC%89-842d24f88e8940f28160a957ffea2fc8/' itemprop="url">
             Read More
           </a>
         </div>
@@ -3532,7 +3529,7 @@ https://accu.cc/content/cryptography/group_ring_field&#x2F;
     
       
         <div class='copyright'>
-        <p><a href="/">Copyright © since 2017 XXX</a></p>
+        <p><a href="/">Copyright © 2020–2026 Feiyu Wu</a></p>
 
         </div>
       
@@ -3834,22 +3831,6 @@ https://accu.cc/content/cryptography/group_ring_field&#x2F;
 </script>
 
 
-
-  <script>
-  volantis.css("https://cdn.bootcdn.net/ajax/libs/pace/1.2.4/themes/blue/pace-theme-minimal.min.css");
-  volantis.js("https://cdn.bootcdn.net/ajax/libs/pace/1.2.4/pace.min.js").then(() => {
-    Pace.options.restartOnPushState = false;
-    volantis.pjax.send(Pace.restart);
-    // 阅读进度
-    volantis.scroll.push(() => {
-      Pace.stop();
-      Pace.trigger('start');
-      Pace.bar.update(volantis.scroll.progress() * 100);
-      document.body.className = document.body.className.replaceAll("pace-running ","");
-    },"阅读进度")
-    // todo：配置项开关, 哪些页面添加阅读进度
-  })
-</script>
 
 
 <!-- pjax 标签必须存在于所有页面 否则 pjax error -->

@@ -53,28 +53,28 @@
   display: none;
 }
 :root {
-  --color-site-body: #f4f4f4;
-  --color-site-bg: #f4f4f4;
+  --color-site-body: #f6f3ec;
+  --color-site-bg: #f6f3ec;
   --color-site-inner: #fff;
-  --color-site-footer: #666;
-  --color-card: #fff;
-  --color-text: #444;
-  --color-block: #f6f6f6;
-  --color-inlinecode: #c74f00;
-  --color-codeblock: #fff7ea;
-  --color-h1: #3a3a3a;
-  --color-h2: #3a3a3a;
-  --color-h3: #333;
-  --color-h4: #444;
-  --color-h5: #555;
-  --color-h6: #666;
-  --color-p: #444;
-  --color-list: #666;
-  --color-list-hl: #30ad91;
-  --color-meta: #888;
+  --color-site-footer: #8f8778;
+  --color-card: #fffefa;
+  --color-text: #4c463c;
+  --color-block: #f4f0e7;
+  --color-inlinecode: #b5382a;
+  --color-codeblock: #f6efe2;
+  --color-h1: #26221b;
+  --color-h2: #26221b;
+  --color-h3: #26221b;
+  --color-h4: #3a352c;
+  --color-h5: #3a352c;
+  --color-h6: #3a352c;
+  --color-p: #4c463c;
+  --color-list: #4c463c;
+  --color-list-hl: #902c21;
+  --color-meta: #8f8778;
   --color-read-bkg: #e0d8c8;
   --color-read-post: #f8f1e2;
-  --color-copyright-bkg: #f5f5f5;
+  --color-copyright-bkg: #f4f0e7;
 }
 * {
   box-sizing: border-box;
@@ -92,13 +92,13 @@
   background: transparent;
 }
 *::-webkit-scrollbar-thumb {
-  background: #3dd9b6;
+  background: #b5382a;
   cursor: pointer;
   border-radius: 2px;
   -webkit-border-radius: 2px;
 }
 *::-webkit-scrollbar-thumb:hover {
-  background: #ff5722;
+  background: #96291d;
 }
 html {
   color: var(--color-text);
@@ -115,13 +115,13 @@ html >::-webkit-scrollbar-track-piece {
   background: transparent;
 }
 html >::-webkit-scrollbar-thumb {
-  background: #3dd9b6;
+  background: #b5382a;
   cursor: pointer;
   border-radius: 2px;
   -webkit-border-radius: 2px;
 }
 html >::-webkit-scrollbar-thumb:hover {
-  background: #ff5722;
+  background: #96291d;
 }
 body {
   background-color: var(--color-site-body);
@@ -144,7 +144,7 @@ body.modal-active {
   }
 }
 a {
-  color: #2092ec;
+  color: #b5382a;
   cursor: pointer;
   text-decoration: none;
   transition: all 0.28s ease;
@@ -155,7 +155,7 @@ a {
   -ms-transition: all 0.28s ease;
 }
 a:hover {
-  color: #ff5722;
+  color: #96291d;
 }
 a:active,
 a:hover {
@@ -191,7 +191,7 @@ hr {
   border: 0;
   border-radius: 1px;
   -webkit-border-radius: 1px;
-  border-bottom: 1px solid rgba(68,68,68,0.1);
+  border-bottom: 1px solid rgba(76,70,60,0.1);
 }
 button,
 input {
@@ -207,7 +207,7 @@ button {
 }
 @supports (backdrop-filter: blur(20px)) {
   .blur {
-    background: rgba(255,255,255,0.9) !important;
+    background: rgba(255,254,250,0.9) !important;
     backdrop-filter: saturate(200%) blur(20px);
   }
 }
@@ -569,7 +569,7 @@ button {
   width: 32px;
   top: 0;
   left: 5px;
-  color: rgba(68,68,68,0.75);
+  color: rgba(76,70,60,0.75);
 }
 .cover-wrapper .cover-body .m_search .input {
   display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
@@ -587,7 +587,7 @@ button {
   padding-left: 36px;
   border-radius: 1.4rem;
   -webkit-border-radius: 1.4rem;
-  background: rgba(255,255,255,0.6);
+  background: rgba(255,254,250,0.6);
   backdrop-filter: blur(10px);
   border: none;
   color: var(--color-text);
@@ -598,10 +598,10 @@ button {
   }
 }
 .cover-wrapper .cover-body .m_search .input:hover {
-  background: rgba(255,255,255,0.8);
+  background: rgba(255,254,250,0.8);
 }
 .cover-wrapper .cover-body .m_search .input:focus {
-  background: #fff;
+  background: #fffefa;
 }
 .cover-wrapper .list-h {
   display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
@@ -737,7 +737,7 @@ button {
   border-bottom: none;
   text-align: center;
   align-content: flex-end;
-  color: rgba(68,68,68,0.7);
+  color: rgba(76,70,60,0.7);
   font-size: 1.5rem;
 }
 @media screen and (max-width: 500px) {
@@ -769,7 +769,7 @@ button {
 .cover-wrapper.dock .menu .list-h a.active i+p,
 .cover-wrapper.featured .menu .list-h a.active i+p,
 .cover-wrapper.focus .menu .list-h a.active i+p {
-  color: #3dd9b6;
+  color: #b5382a;
 }
 .cover-wrapper.dock .menu .list-h a.active img+p,
 .cover-wrapper.featured .menu .list-h a.active img+p,
@@ -785,7 +785,7 @@ button {
   margin-bottom: 48px;
 }
 .cover-wrapper.dock .menu {
-  background: rgba(255,255,255,0.5);
+  background: rgba(255,254,250,0.5);
   position: absolute;
   bottom: 0;
   max-width: 100%;
@@ -814,18 +814,18 @@ button {
     background: transparent;
   }
   .cover-wrapper.dock .menu .list-h::-webkit-scrollbar-thumb {
-    background: #3dd9b6;
+    background: #b5382a;
     cursor: pointer;
     border-radius: 0;
     -webkit-border-radius: 0;
   }
   .cover-wrapper.dock .menu .list-h::-webkit-scrollbar-thumb:hover {
-    background: #ff5722;
+    background: #96291d;
   }
 }
 @supports (backdrop-filter: blur(20px)) {
   .cover-wrapper.dock .menu {
-    background: rgba(255,255,255,0.5);
+    background: rgba(255,254,250,0.5);
     backdrop-filter: saturate(200%) blur(20px);
   }
 }
@@ -1042,7 +1042,7 @@ button {
   -moz-transition: all 0.28s ease;
   -o-transition: all 0.28s ease;
   -ms-transition: all 0.28s ease;
-  color: #3dd9b6;
+  color: #b5382a;
 }
 .l_header .switcher >li >a:hover {
   border: none;
@@ -1154,7 +1154,7 @@ button {
   line-height: 1.3;
   width: 100%;
   color: var(--color-text);
-  background: #fafafa;
+  background: #fffcf0;
   box-shadow: none;
   -webkit-box-shadow: none;
   box-sizing: border-box;
@@ -1222,7 +1222,7 @@ ul.m-pc >li>a {
 }
 ul.m-pc >li>a:active,
 ul.m-pc >li>a.active {
-  border-bottom: 2px solid #3dd9b6;
+  border-bottom: 2px solid #b5382a;
 }
 ul.m-pc li:hover >ul.list-v,
 ul.list-v li:hover >ul.list-v {
@@ -1361,7 +1361,7 @@ ul.list-v >li>a:hover {
 }
 .l_header ul.nav-list-h>li >a:active,
 .l_header ul.nav-list-h>li >a.active {
-  color: #3dd9b6;
+  color: #b5382a;
 }
 .l_header ul.nav-list-h>li:hover>a {
   color: var(--color-list-hl);
@@ -2247,7 +2247,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1790143286832),
+    lastupdate: new Date(1790153040563),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2299,7 +2299,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <!-- import head_end begin -->
   <!-- import head_end end -->
   <!-- Custom Files headEnd begin-->
-  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600%3B700%3B900&display=swap">
+
   <!-- Custom Files headEnd end-->
 </head>
   <body itemscope itemtype="http://schema.org/WebPage">
@@ -2325,9 +2326,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
         <a class="title flat-box" target="_self" href='/'>
           
-            <img no-lazy class='logo' src='https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/Logo-NavBar@3x.png'/>
           
           
+            FeiYu Wu / Homepage
           
         </a>
       
@@ -2663,12 +2664,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/04/开发学习笔记/django学习（三）/">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/04/日常工具/国内手机号注册Google账号（2024亲测有效）/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Feiyu Wu">
   </span>
   <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="name" content="django学习（三）">
+    <meta itemprop="name" content="国内手机号注册Google账号（2024亲测有效）">
     <meta itemprop="description" content="Feiyu Wu&#39;s personal homepage — Embodied AI, Verifiable Security, Reinforcement Learning">
   </span>
   
@@ -2681,17 +2682,25 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/05/04/%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/django%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%89%EF%BC%89/"  itemprop="url">
-        django学习（三）
+      <a href="/2023/05/04/%E6%97%A5%E5%B8%B8%E5%B7%A5%E5%85%B7/%E5%9B%BD%E5%86%85%E6%89%8B%E6%9C%BA%E5%8F%B7%E6%B3%A8%E5%86%8CGoogle%E8%B4%A6%E5%8F%B7%EF%BC%882024%E4%BA%B2%E6%B5%8B%E6%9C%89%E6%95%88%EF%BC%89/"  itemprop="url">
+        国内手机号注册Google账号（2024亲测有效）
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        django学习（三）一 Django Admin 管理工具Django 提供了基于 web 的管理工具。
-Django 自动管理工具是 django.contrib 的一部分。你可以在项目的 settings.py 中的 INSTALLED_APPS 看到它：
-12345678INSTALLED_APPS = (    &#x27;django.contrib.admin&#x27;,  ...
+        国内手机号注册Google账号（2024亲测有效）1. 注册账号我们点击创建账号（请确认能访问Goolge，推荐使用Chrome浏览器）
+https://accounts.google.com/
+
+最好点击个人用途
+在账号信息界面输入姓名，这个名字随意，建议英文
+
+填写出生日期和性别
+
+点击创建Google邮箱地址，国外的邮箱不像国内一样是一串号码，这里可以随意填充，然后是设置密码
+
+验证手...
       
     
   </div>
@@ -2704,7 +2713,7 @@ Django 自动管理工具是 django.contrib 的一部分。你可以在项目的
       </div>
       
         <div>
-          <a class='readmore' href='/2023/05/04/%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/django%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%89%EF%BC%89/' itemprop="url">
+          <a class='readmore' href='/2023/05/04/%E6%97%A5%E5%B8%B8%E5%B7%A5%E5%85%B7/%E5%9B%BD%E5%86%85%E6%89%8B%E6%9C%BA%E5%8F%B7%E6%B3%A8%E5%86%8CGoogle%E8%B4%A6%E5%8F%B7%EF%BC%882024%E4%BA%B2%E6%B5%8B%E6%9C%89%E6%95%88%EF%BC%89/' itemprop="url">
             Read More
           </a>
         </div>
@@ -2720,12 +2729,12 @@ Django 自动管理工具是 django.contrib 的一部分。你可以在项目的
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/04/开发学习笔记/VUE学习-三/">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/04/日常工具/解决Gitee图床不显示问题/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Feiyu Wu">
   </span>
   <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="name" content="VUE学习-三">
+    <meta itemprop="name" content="解决Gitee图床不显示问题">
     <meta itemprop="description" content="Feiyu Wu&#39;s personal homepage — Embodied AI, Verifiable Security, Reinforcement Learning">
   </span>
   
@@ -2738,15 +2747,20 @@ Django 自动管理工具是 django.contrib 的一部分。你可以在项目的
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/05/04/%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/VUE%E5%AD%A6%E4%B9%A0-%E4%B8%89/"  itemprop="url">
-        VUE学习-三
+      <a href="/2023/05/04/%E6%97%A5%E5%B8%B8%E5%B7%A5%E5%85%B7/%E8%A7%A3%E5%86%B3Gitee%E5%9B%BE%E5%BA%8A%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/"  itemprop="url">
+        解决Gitee图床不显示问题
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        1 Class 与 Style 绑定数据绑定的一个常见需求场景是操纵元素的 CSS class 列表和内联样式。因为 class 和 style 都是 attribute，我们可以和其他 attribute 一样使用 v-bind 将它们和动态的字符串绑定。但是，在处理比较复杂的绑定时，通过拼接生成字符串是麻烦且易出错的。因此，Vue 专门为 class 和 style 的 v-bind 用...
+        解决Gitee图床不显示问题(使用阿里云OSS搭建图床)问题前段时间搞博客弄了一个Gitee图床，图片可以上传成功，外部链接可以打开图片，但是hexo s后本地都打开不了图片，但是相应的源码标签里依然有图片链接地址。这就让我很疑惑。
+报错是class=lazyload error
+
+可以看到下图这里是有图片的，就是不能显示。
+
+在网上并没有找到相关的报错解释，然后我又查找了lazyload是...
       
     
   </div>
@@ -2759,299 +2773,7 @@ Django 自动管理工具是 django.contrib 的一部分。你可以在项目的
       </div>
       
         <div>
-          <a class='readmore' href='/2023/05/04/%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/VUE%E5%AD%A6%E4%B9%A0-%E4%B8%89/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/04/生信分析/生信分析-metaGEM使用小记-解决各种问题-2024-2（三）/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Feiyu Wu">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="name" content="生信分析-metaGEM使用小记-解决各种问题-2024-2（三）">
-    <meta itemprop="description" content="Feiyu Wu&#39;s personal homepage — Embodied AI, Verifiable Security, Reinforcement Learning">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/05/04/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90-metaGEM%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%AE%B0-%E8%A7%A3%E5%86%B3%E5%90%84%E7%A7%8D%E9%97%AE%E9%A2%98-2024-2%EF%BC%88%E4%B8%89%EF%BC%89/"  itemprop="url">
-        生信分析-metaGEM使用小记-解决各种问题-2024-2（三）
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        正式流程这是原始文件夹省略了这些文件的内容，tree -I &#39;scripts|rules|envs&#39;
-每次新生成的文件和文件夹会用*标记出来
-12345678910111213.├── config.yaml├── dataset│   ├── L1EFG190305--AM43│   │   ├── L1EFG190305--AM43_R1.fastq.gz│   │   ...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-05-04T20:09:16-06:00">2023-05-04</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/05/04/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90-metaGEM%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%AE%B0-%E8%A7%A3%E5%86%B3%E5%90%84%E7%A7%8D%E9%97%AE%E9%A2%98-2024-2%EF%BC%88%E4%B8%89%EF%BC%89/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/04/生信分析/生信分析-metaGEM使用小记-解决各种问题-2024-2（二）-daf9e5675b4d49cc855dd652b38a99e5/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Feiyu Wu">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="name" content="生信分析-metaGEM使用小记-解决各种问题-2024-2（二）-daf9e5675b4d49cc855dd652b38a99e5">
-    <meta itemprop="description" content="Feiyu Wu&#39;s personal homepage — Embodied AI, Verifiable Security, Reinforcement Learning">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/05/04/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90-metaGEM%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%AE%B0-%E8%A7%A3%E5%86%B3%E5%90%84%E7%A7%8D%E9%97%AE%E9%A2%98-2024-2%EF%BC%88%E4%BA%8C%EF%BC%89-daf9e5675b4d49cc855dd652b38a99e5/"  itemprop="url">
-        生信分析-metaGEM使用小记-解决各种问题-2024-2（二）-daf9e5675b4d49cc855dd652b38a99e5
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        书接上文，貌似配置还有点问题。跑了半天以后迟迟看不到结果，htop一看CPU占用几乎为0，应该是没跑起来，squeue 再一看，状态是PD，意思是等待，正常情况应该是R。于是我有网上找了下原因，说只有空闲条件满足job的运行条件才会运行。
-我做了以下操作：
-
-先scancle 掉所有队列里的人物
-修改slurm.config 的参数稍大一些
-重新启动sudo systemctl restar...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-05-04T20:09:16-06:00">2023-05-04</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/05/04/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90-metaGEM%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%AE%B0-%E8%A7%A3%E5%86%B3%E5%90%84%E7%A7%8D%E9%97%AE%E9%A2%98-2024-2%EF%BC%88%E4%BA%8C%EF%BC%89-daf9e5675b4d49cc855dd652b38a99e5/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/04/生信分析/生信分析-metaGEM使用小记-解决各种问题-2024-1（一）-2a55eec867d5441b9829bd5428024882/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Feiyu Wu">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="name" content="生信分析-metaGEM使用小记-解决各种问题-2024-1（一）-2a55eec867d5441b9829bd5428024882">
-    <meta itemprop="description" content="Feiyu Wu&#39;s personal homepage — Embodied AI, Verifiable Security, Reinforcement Learning">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/05/04/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90-metaGEM%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%AE%B0-%E8%A7%A3%E5%86%B3%E5%90%84%E7%A7%8D%E9%97%AE%E9%A2%98-2024-1%EF%BC%88%E4%B8%80%EF%BC%89-2a55eec867d5441b9829bd5428024882/"  itemprop="url">
-        生信分析-metaGEM使用小记-解决各种问题-2024-1（一）-2a55eec867d5441b9829bd5428024882
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        metaGEM使用小记(解决各种问题)2024.1(一)前言，如何把数据从百度云上下载到linux服务器上可以直接通过pip下载：pip install bypy -y
-第一次使用时需要随便输入一个命令以激活授权界面，如输入 bypy info
-然后打开提示的连接
-
-将复制的内容粘贴到终端后回车，等待即可。
-登陆成功后会提示如下信息
-
-登录百度网盘(我的应用数据&#x2F;bypy&#x2F...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-05-04T20:09:16-06:00">2023-05-04</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/05/04/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90-metaGEM%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%AE%B0-%E8%A7%A3%E5%86%B3%E5%90%84%E7%A7%8D%E9%97%AE%E9%A2%98-2024-1%EF%BC%88%E4%B8%80%EF%BC%89-2a55eec867d5441b9829bd5428024882/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/04/生信分析/生信分析-宏基因组实战-基因注释Prokka/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Feiyu Wu">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="name" content="生信分析-宏基因组实战-基因注释Prokka">
-    <meta itemprop="description" content="Feiyu Wu&#39;s personal homepage — Embodied AI, Verifiable Security, Reinforcement Learning">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/05/04/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90-%E5%AE%8F%E5%9F%BA%E5%9B%A0%E7%BB%84%E5%AE%9E%E6%88%98-%E5%9F%BA%E5%9B%A0%E6%B3%A8%E9%87%8AProkka/"  itemprop="url">
-        生信分析-宏基因组实战-基因注释Prokka
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        宏基因组实战:基因注释Prokka1.Prokka简介细菌基因组、宏基因组的基因注释一直是一个非常复杂的问题，Prokka的出现改变了这一切。
-Prokka: rapid prokaryotic genome annotation，快速的原核基因组注释。就是上面的神兽，猜猜是什么动物，但真不是皮卡丘。
-Prokka是一个命令行软件工具，可以在一台典型台式机上在约10分钟内充分注释一个细菌基因...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-05-04T20:09:16-06:00">2023-05-04</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/05/04/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90-%E5%AE%8F%E5%9F%BA%E5%9B%A0%E7%BB%84%E5%AE%9E%E6%88%98-%E5%9F%BA%E5%9B%A0%E6%B3%A8%E9%87%8AProkka/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/04/生信分析/生信分析-分子动力学模拟/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Feiyu Wu">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="name" content="生信分析-分子动力学模拟">
-    <meta itemprop="description" content="Feiyu Wu&#39;s personal homepage — Embodied AI, Verifiable Security, Reinforcement Learning">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/05/04/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90-%E5%88%86%E5%AD%90%E5%8A%A8%E5%8A%9B%E5%AD%A6%E6%A8%A1%E6%8B%9F/"  itemprop="url">
-        生信分析-分子动力学模拟
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        分子动力学模拟(详细教程 大聚合物插入生物膜中)通过分子动力学模拟来探索不同理化性质 MPs（聚酯 PET、聚乙烯 PE、聚 丙烯酸酯 PP）与细胞膜的直接相互作用。
-经文献调研，PET 微塑料包含多条聚对苯二甲酸乙二醇酯链，化学式为(C10H8O4)n&#x2F;COC6H4COOCH2CH2O，每条链含约 100 个对苯二甲酸单体单元和 约 100 个乙二醇单体单元；PE 微塑料包含多条...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-05-04T20:09:16-06:00">2023-05-04</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/05/04/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90-%E5%88%86%E5%AD%90%E5%8A%A8%E5%8A%9B%E5%AD%A6%E6%A8%A1%E6%8B%9F/' itemprop="url">
+          <a class='readmore' href='/2023/05/04/%E6%97%A5%E5%B8%B8%E5%B7%A5%E5%85%B7/%E8%A7%A3%E5%86%B3Gitee%E5%9B%BE%E5%BA%8A%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/' itemprop="url">
             Read More
           </a>
         </div>
@@ -3188,12 +2910,12 @@ Prokka是一个命令行软件工具，可以在一台典型台式机上在约10
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/04/本科作业/使用pytorch运行mnist数据集-教程复现-d8466b7f7da84e038cedb583bba2afd7/">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/04/密码渗透笔记/密码学-unusualrsa1/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Feiyu Wu">
   </span>
   <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="name" content="使用pytorch运行mnist数据集-教程复现-d8466b7f7da84e038cedb583bba2afd7">
+    <meta itemprop="name" content="密码学-unusualrsa1">
     <meta itemprop="description" content="Feiyu Wu&#39;s personal homepage — Embodied AI, Verifiable Security, Reinforcement Learning">
   </span>
   
@@ -3206,17 +2928,16 @@ Prokka是一个命令行软件工具，可以在一台典型台式机上在约10
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/05/04/%E6%9C%AC%E7%A7%91%E4%BD%9C%E4%B8%9A/%E4%BD%BF%E7%94%A8pytorch%E8%BF%90%E8%A1%8Cmnist%E6%95%B0%E6%8D%AE%E9%9B%86-%E6%95%99%E7%A8%8B%E5%A4%8D%E7%8E%B0-d8466b7f7da84e038cedb583bba2afd7/"  itemprop="url">
-        使用pytorch运行mnist数据集-教程复现-d8466b7f7da84e038cedb583bba2afd7
+      <a href="/2023/05/04/%E5%AF%86%E7%A0%81%E6%B8%97%E9%80%8F%E7%AC%94%E8%AE%B0/%E5%AF%86%E7%A0%81%E5%AD%A6-unusualrsa1/"  itemprop="url">
+        密码学-unusualrsa1
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        教程来自：https://zhuanlan.zhihu.com/p/137571225
-在本文中，我们将在PyTorch中构建一个简单的卷积神经网络，并使用MNIST数据集训练它识别手写数字。在MNIST数据集上训练分类器可以看作是图像识别的“hello world”。
-MNIST包含70,000张手写数字图像: 60,000张用于培训，10,000张用于测试。图像是灰度的，28x28像素的...
+        ctfshow-unusualrsa11 题解下载的代码如下
+12345678910111213141516171819202122# *********************# @Author: Lazzaro# *********************from Crypto.Util.number import getPrime,bytes_to_long,long_to_bytes...
       
     
   </div>
@@ -3229,7 +2950,298 @@ MNIST包含70,000张手写数字图像: 60,000张用于培训，10,000张用于�
       </div>
       
         <div>
-          <a class='readmore' href='/2023/05/04/%E6%9C%AC%E7%A7%91%E4%BD%9C%E4%B8%9A/%E4%BD%BF%E7%94%A8pytorch%E8%BF%90%E8%A1%8Cmnist%E6%95%B0%E6%8D%AE%E9%9B%86-%E6%95%99%E7%A8%8B%E5%A4%8D%E7%8E%B0-d8466b7f7da84e038cedb583bba2afd7/' itemprop="url">
+          <a class='readmore' href='/2023/05/04/%E5%AF%86%E7%A0%81%E6%B8%97%E9%80%8F%E7%AC%94%E8%AE%B0/%E5%AF%86%E7%A0%81%E5%AD%A6-unusualrsa1/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/04/生信分析/生信分析-metaGEM使用小记-解决各种问题-2024-1（一）-2a55eec867d5441b9829bd5428024882/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Feiyu Wu">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="name" content="生信分析-metaGEM使用小记-解决各种问题-2024-1（一）-2a55eec867d5441b9829bd5428024882">
+    <meta itemprop="description" content="Feiyu Wu&#39;s personal homepage — Embodied AI, Verifiable Security, Reinforcement Learning">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2023/05/04/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90-metaGEM%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%AE%B0-%E8%A7%A3%E5%86%B3%E5%90%84%E7%A7%8D%E9%97%AE%E9%A2%98-2024-1%EF%BC%88%E4%B8%80%EF%BC%89-2a55eec867d5441b9829bd5428024882/"  itemprop="url">
+        生信分析-metaGEM使用小记-解决各种问题-2024-1（一）-2a55eec867d5441b9829bd5428024882
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        metaGEM使用小记(解决各种问题)2024.1(一)前言，如何把数据从百度云上下载到linux服务器上可以直接通过pip下载：pip install bypy -y
+第一次使用时需要随便输入一个命令以激活授权界面，如输入 bypy info
+然后打开提示的连接
+
+将复制的内容粘贴到终端后回车，等待即可。
+登陆成功后会提示如下信息
+
+登录百度网盘(我的应用数据&#x2F;bypy&#x2F...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-05-04T20:09:16-06:00">2023-05-04</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2023/05/04/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90-metaGEM%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%AE%B0-%E8%A7%A3%E5%86%B3%E5%90%84%E7%A7%8D%E9%97%AE%E9%A2%98-2024-1%EF%BC%88%E4%B8%80%EF%BC%89-2a55eec867d5441b9829bd5428024882/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/04/生信分析/生信分析-metaGEM使用小记-解决各种问题-2024-2（三）/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Feiyu Wu">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="name" content="生信分析-metaGEM使用小记-解决各种问题-2024-2（三）">
+    <meta itemprop="description" content="Feiyu Wu&#39;s personal homepage — Embodied AI, Verifiable Security, Reinforcement Learning">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2023/05/04/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90-metaGEM%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%AE%B0-%E8%A7%A3%E5%86%B3%E5%90%84%E7%A7%8D%E9%97%AE%E9%A2%98-2024-2%EF%BC%88%E4%B8%89%EF%BC%89/"  itemprop="url">
+        生信分析-metaGEM使用小记-解决各种问题-2024-2（三）
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        正式流程这是原始文件夹省略了这些文件的内容，tree -I &#39;scripts|rules|envs&#39;
+每次新生成的文件和文件夹会用*标记出来
+12345678910111213.├── config.yaml├── dataset│   ├── L1EFG190305--AM43│   │   ├── L1EFG190305--AM43_R1.fastq.gz│   │   ...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-05-04T20:09:16-06:00">2023-05-04</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2023/05/04/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90-metaGEM%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%AE%B0-%E8%A7%A3%E5%86%B3%E5%90%84%E7%A7%8D%E9%97%AE%E9%A2%98-2024-2%EF%BC%88%E4%B8%89%EF%BC%89/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/04/本科作业/大三网络安全智能终端实验一/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Feiyu Wu">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="name" content="大三网络安全智能终端实验一">
+    <meta itemprop="description" content="Feiyu Wu&#39;s personal homepage — Embodied AI, Verifiable Security, Reinforcement Learning">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2023/05/04/%E6%9C%AC%E7%A7%91%E4%BD%9C%E4%B8%9A/%E5%A4%A7%E4%B8%89%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%99%BA%E8%83%BD%E7%BB%88%E7%AB%AF%E5%AE%9E%E9%AA%8C%E4%B8%80/"  itemprop="url">
+        大三网络安全智能终端实验一
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        西安电子科技大学网信院
+智能终端实验实验报告（一）班级：2018XX学号：20009XXXX日期：2023.4.24一、实验摘要研究不断推动机器学习模型更快，更精确，更有效。然而，设计和训练模型的一个经常被忽视的方面是安全性和鲁棒性，特别是在面对希望欺骗模型的对手时。向图像添加不可察觉的扰动可以导致完全不同的模型性能。我们将通过一个图像分类器的例子来探讨这个主题。具体来说，我们将使用第一个和...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-05-04T20:09:16-06:00">2023-05-04</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2023/05/04/%E6%9C%AC%E7%A7%91%E4%BD%9C%E4%B8%9A/%E5%A4%A7%E4%B8%89%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%99%BA%E8%83%BD%E7%BB%88%E7%AB%AF%E5%AE%9E%E9%AA%8C%E4%B8%80/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/04/生信分析/生信分析-metaGEM使用小记-解决各种问题-2024-2（二）-daf9e5675b4d49cc855dd652b38a99e5/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Feiyu Wu">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="name" content="生信分析-metaGEM使用小记-解决各种问题-2024-2（二）-daf9e5675b4d49cc855dd652b38a99e5">
+    <meta itemprop="description" content="Feiyu Wu&#39;s personal homepage — Embodied AI, Verifiable Security, Reinforcement Learning">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2023/05/04/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90-metaGEM%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%AE%B0-%E8%A7%A3%E5%86%B3%E5%90%84%E7%A7%8D%E9%97%AE%E9%A2%98-2024-2%EF%BC%88%E4%BA%8C%EF%BC%89-daf9e5675b4d49cc855dd652b38a99e5/"  itemprop="url">
+        生信分析-metaGEM使用小记-解决各种问题-2024-2（二）-daf9e5675b4d49cc855dd652b38a99e5
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        书接上文，貌似配置还有点问题。跑了半天以后迟迟看不到结果，htop一看CPU占用几乎为0，应该是没跑起来，squeue 再一看，状态是PD，意思是等待，正常情况应该是R。于是我有网上找了下原因，说只有空闲条件满足job的运行条件才会运行。
+我做了以下操作：
+
+先scancle 掉所有队列里的人物
+修改slurm.config 的参数稍大一些
+重新启动sudo systemctl restar...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-05-04T20:09:16-06:00">2023-05-04</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2023/05/04/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90-metaGEM%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%AE%B0-%E8%A7%A3%E5%86%B3%E5%90%84%E7%A7%8D%E9%97%AE%E9%A2%98-2024-2%EF%BC%88%E4%BA%8C%EF%BC%89-daf9e5675b4d49cc855dd652b38a99e5/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/04/生信分析/生信分析-分子动力学模拟/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Feiyu Wu">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="name" content="生信分析-分子动力学模拟">
+    <meta itemprop="description" content="Feiyu Wu&#39;s personal homepage — Embodied AI, Verifiable Security, Reinforcement Learning">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2023/05/04/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90-%E5%88%86%E5%AD%90%E5%8A%A8%E5%8A%9B%E5%AD%A6%E6%A8%A1%E6%8B%9F/"  itemprop="url">
+        生信分析-分子动力学模拟
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        分子动力学模拟(详细教程 大聚合物插入生物膜中)通过分子动力学模拟来探索不同理化性质 MPs（聚酯 PET、聚乙烯 PE、聚 丙烯酸酯 PP）与细胞膜的直接相互作用。
+经文献调研，PET 微塑料包含多条聚对苯二甲酸乙二醇酯链，化学式为(C10H8O4)n&#x2F;COC6H4COOCH2CH2O，每条链含约 100 个对苯二甲酸单体单元和 约 100 个乙二醇单体单元；PE 微塑料包含多条...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-05-04T20:09:16-06:00">2023-05-04</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2023/05/04/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90-%E5%88%86%E5%AD%90%E5%8A%A8%E5%8A%9B%E5%AD%A6%E6%A8%A1%E6%8B%9F/' itemprop="url">
             Read More
           </a>
         </div>
@@ -3522,7 +3534,7 @@ MNIST包含70,000张手写数字图像: 60,000张用于培训，10,000张用于�
     
       
         <div class='copyright'>
-        <p><a href="/">Copyright © since 2017 XXX</a></p>
+        <p><a href="/">Copyright © 2020–2026 Feiyu Wu</a></p>
 
         </div>
       
@@ -3824,22 +3836,6 @@ MNIST包含70,000张手写数字图像: 60,000张用于培训，10,000张用于�
 </script>
 
 
-
-  <script>
-  volantis.css("https://cdn.bootcdn.net/ajax/libs/pace/1.2.4/themes/blue/pace-theme-minimal.min.css");
-  volantis.js("https://cdn.bootcdn.net/ajax/libs/pace/1.2.4/pace.min.js").then(() => {
-    Pace.options.restartOnPushState = false;
-    volantis.pjax.send(Pace.restart);
-    // 阅读进度
-    volantis.scroll.push(() => {
-      Pace.stop();
-      Pace.trigger('start');
-      Pace.bar.update(volantis.scroll.progress() * 100);
-      document.body.className = document.body.className.replaceAll("pace-running ","");
-    },"阅读进度")
-    // todo：配置项开关, 哪些页面添加阅读进度
-  })
-</script>
 
 
 <!-- pjax 标签必须存在于所有页面 否则 pjax error -->
